@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "BayesCoverage"
+  navbar:
+    left:
+      - href: index.qmd
+        text: About
+      - href: modules.qmd
+        text: Let's go Bayesian!
+      - href: R.qmd
+        text: Learning R
+      
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    link-external-icon: true
+    link-external-newwindow: true
+
+
+editor: visual
+

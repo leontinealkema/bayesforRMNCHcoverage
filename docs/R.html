@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BayesCoverage -</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">BayesCoverage</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./modules.html"> 
+<span class="menu-text">Let’s go Bayesian!</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./R.html" aria-current="page"> 
+<span class="menu-text">Learning R</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#steps-to-get-set-up-with-rr-studio-for-new-users" id="toc-steps-to-get-set-up-with-rr-studio-for-new-users" class="nav-link" data-scroll-target="#steps-to-get-set-up-with-rr-studio-for-new-users">Steps to get set up with R/R studio for new users</a>
+  <ul class="collapse">
+  <li><a href="#step-1-download-and-install-r-and-rstudio" id="toc-step-1-download-and-install-r-and-rstudio" class="nav-link" data-scroll-target="#step-1-download-and-install-r-and-rstudio">Step 1: Download and install R and Rstudio</a></li>
+  <li><a href="#step-2-download-the-bayescoveragetraining-material-from-github" id="toc-step-2-download-the-bayescoveragetraining-material-from-github" class="nav-link" data-scroll-target="#step-2-download-the-bayescoveragetraining-material-from-github">Step 2: Download the BayesCoverageTraining material from github</a>
+  <ul class="collapse">
+  <li><a href="#instructions-for-those-new-to-github" id="toc-instructions-for-those-new-to-github" class="nav-link" data-scroll-target="#instructions-for-those-new-to-github">Instructions for those new to Github</a></li>
+  </ul></li>
+  <li><a href="#step-3-open-your-bayescoveragetraining-r-studio-project-and-start-working-with-the-code-for-the-module" id="toc-step-3-open-your-bayescoveragetraining-r-studio-project-and-start-working-with-the-code-for-the-module" class="nav-link" data-scroll-target="#step-3-open-your-bayescoveragetraining-r-studio-project-and-start-working-with-the-code-for-the-module">Step 3: Open your BayesCoverageTraining R studio project and start working with the code for the module</a></li>
+  </ul></li>
+  <li><a href="#learning-r" id="toc-learning-r" class="nav-link" data-scroll-target="#learning-r">Learning R</a>
+  <ul class="collapse">
+  <li><a href="#general-resources-on-r-and-rstudio" id="toc-general-resources-on-r-and-rstudio" class="nav-link" data-scroll-target="#general-resources-on-r-and-rstudio">General resources on R and Rstudio</a></li>
+  <li><a href="#resources-on-specific-r-related-topics" id="toc-resources-on-specific-r-related-topics" class="nav-link" data-scroll-target="#resources-on-specific-r-related-topics">Resources on specific R-related topics</a></li>
+  </ul></li>
+  <li><a href="#getting-going-with-github" id="toc-getting-going-with-github" class="nav-link" data-scroll-target="#getting-going-with-github">Getting going with git(hub)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>We will use the open-source software R for analyses and computations, through its user-friendly interface R-studio (https://posit.co/products/open-source/rstudio/). For model fitting, R packages and extensions are used such that all analyses take place in R. Analysis scripts will be provided for example analyses and discussed in recordings.</p>
+<p>This page contains resources for those of you new to R. Note that this is a live document and will be updated as the training progresses. If you have a good resource to share, please let us know on the R slack channel!</p>
+</section>
+<section id="steps-to-get-set-up-with-rr-studio-for-new-users" class="level1">
+<h1>Steps to get set up with R/R studio for new users</h1>
+<section id="step-1-download-and-install-r-and-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-download-and-install-r-and-rstudio">Step 1: Download and install R and Rstudio</h2>
+<p>Go to <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a> and follow instructions to install R and Rstudio on your own computer (first install R, then R studio).&nbsp;</p>
+</section>
+<section id="step-2-download-the-bayescoveragetraining-material-from-github" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-download-the-bayescoveragetraining-material-from-github">Step 2: Download the BayesCoverageTraining material from github</h2>
+<p>All code for this course will be made available in a public repository (repo) on Github: <a href="https://github.com/AlkemaLab/BayesCoverageTraining" class="uri">https://github.com/AlkemaLab/BayesCoverageTraining</a>.&nbsp;&nbsp;</p>
+<p>The text below introduces Github and a workflow for non-Github users. Participants who are familiar with github can ignore that workflow and work with the repository directly.&nbsp;</p>
+<section id="instructions-for-those-new-to-github" class="level3">
+<h3 class="anchored" data-anchor-id="instructions-for-those-new-to-github">Instructions for those new to Github</h3>
+<p>Github refers to a hosting service for projects that use a version control system (git). Many programming projects, such as R packages, use Github repositories and the git version control system such that several people can work together and contribute to the project. Rstudio has nice functionality to work with and contribute to Github repositories. However, it requires some learning to get started with it. Hence, to avoid too much learning at once, we introduce a workflow that does not require any knowledge or experience with git(hub) for new users. If you are interested in learning more about git and github, some resources are provided below. We may come back to the use of github when doing collaborative analysis projects.<br>
+</p>
+<p><strong>When downloading the code for the first time, take the following steps:</strong></p>
+<ol type="1">
+<li>Download the repo&nbsp;</li>
+</ol>
+<ul>
+<li><p>Go to <a href="https://github.com/AlkemaLab/BayesCoverageTraining" class="uri">https://github.com/AlkemaLab/BayesCoverageTraining</a></p></li>
+<li><p>Click on “Code” (green button), then “download zip”, see screenshot 1 below.</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Set up your local folder with your Rstudio project&nbsp;</li>
+</ol>
+<ul>
+<li><p>Place the zipped downloaded file in a place where you can find it again: this directory will contain all your R code for the training</p></li>
+<li><p>Unzip the downloaded file</p></li>
+<li><p>Click on “BayesCoverageTraining.Rproj” to open your project in R studio, see screenshot 2.</p></li>
+</ul>
+<p><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXfoa8jhAUu5XK-WZnlOFHR9LciyDpRySZMOl_HHTstQFJ2Qs44DoTqht0ixLtAAlo8JNWmlFvleIl-oVJFqvevn8NqXV9EvNYq3EsWl1MlsjtGHsQVMcutsiG54rC3CPfj222R4_11ugMHc9RVdCl2b-38J?key=ugo4aalaJ3XfF8QvaLxWUg.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1170151898.png" class="img-fluid" width="417"><br>
+</p>
+<p><strong>Code updates/additions:</strong></p>
+<p>New modules will be added as the training progresses. To get the code in your local BayesCoverageTraining folder, you will need to download the new module and add it.&nbsp;</p>
+<p>To do so, we recommend just downloading the entire repository again as per step A above, unzipping, and then selecting the folder that you want to move to your local BayesCoverageTraining folder. (But if you want, note that you can also download individual files (just click on the file you want, and then there is a download button [downwards arrow] in the top left).</p>
+</section>
+</section>
+<section id="step-3-open-your-bayescoveragetraining-r-studio-project-and-start-working-with-the-code-for-the-module" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-open-your-bayescoveragetraining-r-studio-project-and-start-working-with-the-code-for-the-module">Step 3: Open your BayesCoverageTraining R studio project and start working with the code for the module</h2>
+<p>As explained in Step 3, you will have a local directory with BayesCoverageTraining.Rproj in it. Click on that Rproj file to start working away (see recording for a quick intro).</p>
+<p>We recommend always to start with opening the project file (to start an R studio session), as opposed to opening just the file you want to use, to have the right set up.</p>
+<p>You can add additional files and edit the training files as you want. Just make sure to stick to the folder structure to avoid issues. If you are running into problems after editing a local copy of a file, you can always download a new one and start over.</p>
+</section>
+</section>
+<section id="learning-r" class="level1">
+<h1>Learning R</h1>
+<p>If you’re completely new to R, we recommend to consider one of gazillion great resources out there to get started in R and R studio. For module 1, we recommend learning a little about Rstudio and R markdown. We added some resources for this below. For later modules, learning about data wrangling (using dplyr), data visualization (using ggplot), and reading/writing data will be helpful. We will add information for this later on in the training.&nbsp;</p>
+<p><em>Note on posit cloud computing:</em> Some introductions to Rstudio use posit cloud services. While this works well to show how Rstudio works (without needing to worry about getting a local set up in order), our trials suggested that it’s not powerful enough for our exercises (fitting even a simple Bayesian model took a long time and resulted in some workspace crashes). So we will stick to using Rstudio locally.</p>
+<section id="general-resources-on-r-and-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="general-resources-on-r-and-rstudio">General resources on R and Rstudio</h2>
+<p>These books are all freely available online:</p>
+<ul>
+<li><p>R for Data Science (first published in 2017, now on 2(+?) edition, content updated on website). Hadley Wickham and Garrett Grolemund. O’Reilly Media, Inc.&nbsp;<a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a></p></li>
+<li><p>Statistical Inference via Data Science: A Modern Dive into R and the Tidyverse (2020). Chester Ismay and Albert Y. Kim. Chapman &amp; Hall/CRC The R Series. <a href="https://moderndive.com" class="uri">https://moderndive.com</a></p></li>
+<li><p>(short) courses with great reference material (perhaps some of it is a little outdated by now but intro material, ie on R, R studio, objects, markdown, dplyr basics is still relevant):</p>
+<ul>
+<li><p><a href="https://github.com/rstudio-education/remaster-the-tidyverse" class="uri">https://github.com/rstudio-education/remaster-the-tidyverse</a></p></li>
+<li><p><a href="http://stat545.com/index.html" class="uri">http://stat545.com/index.html</a>&nbsp;</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="resources-on-specific-r-related-topics" class="level2">
+<h2 class="anchored" data-anchor-id="resources-on-specific-r-related-topics">Resources on specific R-related topics</h2>
+<p>This set is to-be-finalized based on what’s needed. Here are some for starters:</p>
+<ul>
+<li><p>Site includes recordings on Rstudio, R markdown</p>
+<ul>
+<li><a href="https://datavizf23.classes.andrewheiss.com/lesson/01-lesson.html" class="uri">https://datavizf23.classes.andrewheiss.com/lesson/01-lesson.html</a></li>
+</ul></li>
+<li><p>…</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="getting-going-with-github" class="level1">
+<h1>Getting going with git(hub)</h1>
+<p>Some brief steps:</p>
+<ul>
+<li><p>Get a github account</p></li>
+<li><p>Recommended steps to get started using Rstudio build-in functionality:&nbsp;</p>
+<ul>
+<li><p>Connect your Rstudio with github, here is an “how-to-set-it-up” explanation <a href="https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio/">https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio</a></p></li>
+<li><p>Consider an Rstudio-based workflow such as this one <a href="https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r" class="uri">https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r</a></p></li>
+</ul></li>
+</ul>
+<p>Once you get going, you may want to learn more. This is a great book: <a href="https://happygitwithr.com/" class="uri">https://happygitwithr.com/</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

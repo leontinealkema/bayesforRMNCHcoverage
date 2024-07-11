@@ -1,0 +1,57 @@
+---
+title: "Training in Bayesian modeling"
+format:
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+# Overview
+
+## Background
+
+Why would we want to introduce Bayesian statistical models to produce estimates and forecasts for Countdown coverage indicators?
+
+-   Link to [slides](https://drive.google.com/file/d/1NP_WYZ5ffhWL1b4AY8v0Kd4HFWwMx8_w/view?usp=sharing "Slides 0 intro")
+
+-   Link to [recording](https://drive.google.com/file/d/1XREbv8VWpi_EwR86b_jazfzv0BxsA-e5/view?usp=drive_link "Recoding 0 intro")
+
+## Training content
+
+The training is divided into 5 modules:
+
+1.  Introduction to Bayesian inference and Bayesian modeling in global health
+
+2.  How to exchange information between populations: Hierarchical models (also called multilevel models)
+
+3.  How to best use data to inform estimates: Data models for survey and routine surveillance data  
+
+4.  What assumptions to make about indicators and how they change with time: Time series process models, focused on transition models 
+
+5.  Putting it all together: Using Bayesian hierarchical transition models for model fitting, how to go about it, what to check?
+
+In each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises. The schedule can be found [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vROdU0FX10fhCk6MeEwB6XQ0m4o_HNY4KhQQ7y77XkAnUtfafx-3fiNrO-VZ4VEmMvgldmKYRt6_ye0/pubhtml?gid=1779572550&single=true "Schedule").
+
+# Module 1: Introduction to Bayesian inference
+
+![](images/clipboard-3224793780.png)
+
+![](images/clipboard-109123279.png)
+
+## Bayesian thinking and Bayes' rule 101
+
+Material:
+
+-   link to slides
+
+-   link to recording
+
+## Bayesian inference for a population proportion
+
+Material:
+
+-   link to slides
+
+-   link to recording
+
+-   link to R notebook to do Bayesian inference for a population proportion
