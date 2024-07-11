@@ -4,9 +4,13 @@ title: ""
 
 # Overview
 
+All code for this training will be made available in a public repository (repo) on Github: <https://github.com/AlkemaLab/BayesCoverageTraining>.
+
 We will use the open-source software R for analyses and computations, through its user-friendly interface R-studio (https://posit.co/products/open-source/rstudio/). For model fitting, R packages and extensions are used such that all analyses take place in R. Analysis scripts will be provided for example analyses and discussed in recordings.
 
-This page contains resources for those of you new to R. Note that this is a live document and will be updated as the training progresses. If you have a good resource to share, please let us know on the R slack channel!
+The remainder of this page contains resources for those of you new to R, and a workflow for non-Github users.
+
+Note that this is a live document and will be updated as the training progresses. If you have a good resource to share, please let us know on the R slack channel!
 
 # Steps to get set up with R/R studio for new users
 
@@ -32,6 +36,8 @@ Github refers to a hosting service for projects that use a version control syste
 
 -   Click on “Code” (green button), then “download zip”, see screenshot 1 below.
 
+![](images/clipboard-2092824590.png){width="679"}
+
 2.  Set up your local folder with your Rstudio project 
 
 -   Place the zipped downloaded file in a place where you can find it again: this directory will contain all your R code for the training
@@ -40,9 +46,9 @@ Github refers to a hosting service for projects that use a version control syste
 
 -   Click on “BayesCoverageTraining.Rproj” to open your project in R studio, see screenshot 2.
 
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfoa8jhAUu5XK-WZnlOFHR9LciyDpRySZMOl_HHTstQFJ2Qs44DoTqht0ixLtAAlo8JNWmlFvleIl-oVJFqvevn8NqXV9EvNYq3EsWl1MlsjtGHsQVMcutsiG54rC3CPfj222R4_11ugMHc9RVdCl2b-38J?key=ugo4aalaJ3XfF8QvaLxWUg)
+![](images/clipboard-1170151898.png){width="417"}
 
-![](images/clipboard-1170151898.png){width="417"}\
+\
 
 **Code updates/additions:**
 
