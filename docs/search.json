@@ -82,5 +82,26 @@
     "title": "Overview",
     "section": "Resources on specific R-related topics",
     "text": "Resources on specific R-related topics\nThis set is to-be-finalized based on what’s needed. Here are some for starters:\n\nSite includes recordings on Rstudio, R markdown\n\nhttps://datavizf23.classes.andrewheiss.com/lesson/01-lesson.html\n\n…"
+  },
+  {
+    "objectID": "modules.html#unit-1-lets-think-like-a-bayesian",
+    "href": "modules.html#unit-1-lets-think-like-a-bayesian",
+    "title": "Training in Bayesian modeling",
+    "section": "Unit 1: Let’s think like a Bayesian!",
+    "text": "Unit 1: Let’s think like a Bayesian!\nMaterial:\n\nlink to slides\nlink to recording"
+  },
+  {
+    "objectID": "modules.html#unit-2-bayesian-inference-for-a-population-proportion",
+    "href": "modules.html#unit-2-bayesian-inference-for-a-population-proportion",
+    "title": "Training in Bayesian modeling",
+    "section": "Unit 2: Bayesian inference for a population proportion",
+    "text": "Unit 2: Bayesian inference for a population proportion\nMaterial:\n\nlink to slides\nlink to recording, note that the start of the recording has an issue with the screen capture of the title slide but that resolves itself on the 2nd slide."
+  },
+  {
+    "objectID": "modules.html#unit-3-more-details-on-bayesian-inference-and-bayes-rule-for-estimating-a-population-proportion",
+    "href": "modules.html#unit-3-more-details-on-bayesian-inference-and-bayes-rule-for-estimating-a-population-proportion",
+    "title": "Training in Bayesian modeling",
+    "section": "Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion",
+    "text": "Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion\nMaterial:\n\nlink to slides\nlink to recording\nlink to R notebook to do Bayesian inference for a population proportion (saved in our github repo in the folder module1)"
   }
 ]

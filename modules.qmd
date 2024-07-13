@@ -36,22 +36,28 @@ In each module, topics include conceptual understanding as well as hands-on anal
 
 ![](images/clipboard-3224793780.png)
 
-![](images/clipboard-109123279.png)
-
-## Bayesian thinking and Bayes' rule 101
+## ![](images/clipboard-2503681046.png)Unit 1: Let’s think like a Bayesian!
 
 Material:
 
--   link to slides
+-   link to [slides](https://drive.google.com/file/d/1z9NJUKhz69qRXmkAG9oUQwf897amQBMX/view?usp=sharing)
 
--   link to recording
+-   link to [recording](https://drive.google.com/file/d/1iCdMeuFPDq-WXhSOat8dH748pndwi9CL/view?usp=sharing)
 
-## Bayesian inference for a population proportion
+## Unit 2: Bayesian inference for a population proportion
 
 Material:
 
--   link to slides
+-   link to [slides](https://drive.google.com/file/d/1EiTjmIk7b0hTnQuV7Y7BcIr4xGi_nPMG/view?usp=sharing)
 
--   link to recording
+-   link to [recording](https://drive.google.com/file/d/13G8Ww5woPQ-vUDsxZyS4psiIGANfOFSL/view?usp=sharing), note that the start of the recording has an issue with the screen capture of the title slide but that resolves itself on the 2nd slide.
 
--   link to R notebook to do Bayesian inference for a population proportion
+## Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion
+
+Material:
+
+-   link to [slides](https://drive.google.com/file/d/1AcOfCtARyVf11UpO3bAucVHam1tzAEKa/view?usp=sharing)
+
+-   link to [recording](https://drive.google.com/file/d/1iWz9xb3bLm4HK3FQDXJ5UUVNW7tqlhda/view?usp=sharing)
+
+-   link to R notebook to do Bayesian inference for a population proportion (saved in our github repo in the folder module1)
