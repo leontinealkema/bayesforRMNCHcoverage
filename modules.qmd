@@ -60,4 +60,4 @@ Material:
 
 -   link to [recording](https://drive.google.com/file/d/1iWz9xb3bLm4HK3FQDXJ5UUVNW7tqlhda/view?usp=sharing)
 
--   link to R notebook to do Bayesian inference for a population proportion (saved in our github repo in the folder module1)
+-   link to R notebook to do Bayesian inference for a population proportion is saved in our github repo in the folder module1, direct link [here](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/everythingisnormal.Rmd).
