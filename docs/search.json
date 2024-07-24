@@ -21,18 +21,25 @@
     "text": "The training is divided into 5 modules:\n\nIntroduction to Bayesian inference and Bayesian modeling in global health\nHow to exchange information between populations: Hierarchical models (also called multilevel models)\nHow to best use data to inform estimates: Data models for survey and routine surveillance data  \nWhat assumptions to make about indicators and how they change with time: Time series process models, focused on transition models \nPutting it all together: Using Bayesian hierarchical transition models for model fitting, how to go about it, what to check?\n\nIn each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises. The schedule can be found here."
   },
   {
-    "objectID": "modules.html#bayesian-thinking-and-bayes-rule-101",
-    "href": "modules.html#bayesian-thinking-and-bayes-rule-101",
+    "objectID": "modules.html#unit-1-lets-think-like-a-bayesian",
+    "href": "modules.html#unit-1-lets-think-like-a-bayesian",
     "title": "Training in Bayesian modeling",
-    "section": "Bayesian thinking and Bayes’ rule 101",
-    "text": "Bayesian thinking and Bayes’ rule 101\nMaterial:\n\nlink to slides\nlink to recording"
+    "section": "Unit 1: Let’s think like a Bayesian!",
+    "text": "Unit 1: Let’s think like a Bayesian!\nMaterial:\n\nlink to slides\nlink to recording"
   },
   {
-    "objectID": "modules.html#bayesian-inference-for-a-population-proportion",
-    "href": "modules.html#bayesian-inference-for-a-population-proportion",
+    "objectID": "modules.html#unit-2-bayesian-inference-for-a-population-proportion",
+    "href": "modules.html#unit-2-bayesian-inference-for-a-population-proportion",
     "title": "Training in Bayesian modeling",
-    "section": "Bayesian inference for a population proportion",
-    "text": "Bayesian inference for a population proportion\nMaterial:\n\nlink to slides\nlink to recording\nlink to R notebook to do Bayesian inference for a population proportion"
+    "section": "Unit 2: Bayesian inference for a population proportion",
+    "text": "Unit 2: Bayesian inference for a population proportion\nMaterial:\n\nlink to slides\nlink to recording, note that the start of the recording has an issue with the screen capture of the title slide but that resolves itself on the 2nd slide."
+  },
+  {
+    "objectID": "modules.html#unit-3-more-details-on-bayesian-inference-and-bayes-rule-for-estimating-a-population-proportion",
+    "href": "modules.html#unit-3-more-details-on-bayesian-inference-and-bayes-rule-for-estimating-a-population-proportion",
+    "title": "Training in Bayesian modeling",
+    "section": "Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion",
+    "text": "Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion\nMaterial:\n\nlink to slides\nlink to recording\nlink to R notebook to do Bayesian inference for a population proportion is saved in our github repo in the folder module1, direct link here."
   },
   {
     "objectID": "index.html",
@@ -70,38 +77,24 @@
     "text": "Step 3: Open your BayesCoverageTraining R studio project and start working with the code for the module\nAs explained in Step 3, you will have a local directory with BayesCoverageTraining.Rproj in it. Click on that Rproj file to start working away (see recording for a quick intro).\nWe recommend always to start with opening the project file (to start an R studio session), as opposed to opening just the file you want to use, to have the right set up.\nYou can add additional files and edit the training files as you want. Just make sure to stick to the folder structure to avoid issues. If you are running into problems after editing a local copy of a file, you can always download a new one and start over."
   },
   {
-    "objectID": "R.html#general-resources-on-r-and-rstudio",
-    "href": "R.html#general-resources-on-r-and-rstudio",
+    "objectID": "R.html#books-on-r-and-rstudio",
+    "href": "R.html#books-on-r-and-rstudio",
     "title": "Overview",
-    "section": "General resources on R and Rstudio",
-    "text": "General resources on R and Rstudio\nThese books are all freely available online:\n\nR for Data Science (first published in 2017, now on 2(+?) edition, content updated on website). Hadley Wickham and Garrett Grolemund. O’Reilly Media, Inc. https://r4ds.hadley.nz/\nStatistical Inference via Data Science: A Modern Dive into R and the Tidyverse (2020). Chester Ismay and Albert Y. Kim. Chapman & Hall/CRC The R Series. https://moderndive.com\n(short) courses with great reference material (perhaps some of it is a little outdated by now but intro material, ie on R, R studio, objects, markdown, dplyr basics is still relevant):\n\nhttps://github.com/rstudio-education/remaster-the-tidyverse\nhttp://stat545.com/index.html"
+    "section": "Books on R and Rstudio",
+    "text": "Books on R and Rstudio\nThese books are all freely available online:\n\nR for Data Science (first published in 2017, now on 2(+?) edition, content updated on website). Hadley Wickham and Garrett Grolemund. O’Reilly Media, Inc. https://r4ds.hadley.nz/\nStatistical Inference via Data Science: A Modern Dive into R and the Tidyverse (2020). Chester Ismay and Albert Y. Kim. Chapman & Hall/CRC The R Series. https://moderndive.com\n(short) courses with great reference material (perhaps some of it is a little outdated by now but intro material, ie on R, R studio, objects, markdown, dplyr basics is still relevant):\n\nhttps://github.com/rstudio-education/remaster-the-tidyverse\nhttp://stat545.com/index.html"
   },
   {
-    "objectID": "R.html#resources-on-specific-r-related-topics",
-    "href": "R.html#resources-on-specific-r-related-topics",
+    "objectID": "R.html#other-resources",
+    "href": "R.html#other-resources",
     "title": "Overview",
-    "section": "Resources on specific R-related topics",
-    "text": "Resources on specific R-related topics\nThis set is to-be-finalized based on what’s needed. Here are some for starters:\n\nSite includes recordings on Rstudio, R markdown\n\nhttps://datavizf23.classes.andrewheiss.com/lesson/01-lesson.html\n\n…"
+    "section": "Other resources",
+    "text": "Other resources\nThis set is to-be-finalized based on what’s needed. Here are some for starters:\n\nGreat resource in terms of covering the main parts and being to the point.\n\nhttps://scubed.netlify.app/courses/1_intro_r_tidyverse/\n\nSite includes recordings on Rstudio, R markdown\n\nhttps://datavizf23.classes.andrewheiss.com/lesson/01-lesson.html\n\n…"
   },
   {
-    "objectID": "modules.html#unit-1-lets-think-like-a-bayesian",
-    "href": "modules.html#unit-1-lets-think-like-a-bayesian",
-    "title": "Training in Bayesian modeling",
-    "section": "Unit 1: Let’s think like a Bayesian!",
-    "text": "Unit 1: Let’s think like a Bayesian!\nMaterial:\n\nlink to slides\nlink to recording"
-  },
-  {
-    "objectID": "modules.html#unit-2-bayesian-inference-for-a-population-proportion",
-    "href": "modules.html#unit-2-bayesian-inference-for-a-population-proportion",
-    "title": "Training in Bayesian modeling",
-    "section": "Unit 2: Bayesian inference for a population proportion",
-    "text": "Unit 2: Bayesian inference for a population proportion\nMaterial:\n\nlink to slides\nlink to recording, note that the start of the recording has an issue with the screen capture of the title slide but that resolves itself on the 2nd slide."
-  },
-  {
-    "objectID": "modules.html#unit-3-more-details-on-bayesian-inference-and-bayes-rule-for-estimating-a-population-proportion",
-    "href": "modules.html#unit-3-more-details-on-bayesian-inference-and-bayes-rule-for-estimating-a-population-proportion",
-    "title": "Training in Bayesian modeling",
-    "section": "Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion",
-    "text": "Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion\nMaterial:\n\nlink to slides\nlink to recording\nlink to R notebook to do Bayesian inference for a population proportion is saved in our github repo in the folder module1, direct link here."
+    "objectID": "R.html#for-stata-users",
+    "href": "R.html#for-stata-users",
+    "title": "Overview",
+    "section": "For Stata users",
+    "text": "For Stata users\nShared by Leonardo Ferreira: For those that are comfortable working with Stata but new to R, I have come across a few cheat sheets that try to translate Stata commands to R. Here is a post with several examples and a two-page cheat sheet in the end.\nhttps://www.hertiecodingclub.com/learn/rstudio/stata_to_r/\nJust good to keep in mind that the way R works is somewhat different from the way Stata does (in terms of structure, environment and objects). So not everything can be translated or thought as if we were coding in Stata."
   }
 ]

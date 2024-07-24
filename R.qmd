@@ -70,7 +70,7 @@ If you’re completely new to R, we recommend to consider one of gazillion great
 
 *Note on posit cloud computing:* Some introductions to Rstudio use posit cloud services. While this works well to show how Rstudio works (without needing to worry about getting a local set up in order), our trials suggested that it’s not powerful enough for our exercises (fitting even a simple Bayesian model took a long time and resulted in some workspace crashes). So we will stick to using Rstudio locally.
 
-## General resources on R and Rstudio
+## Books on R and Rstudio
 
 These books are all freely available online:
 
@@ -84,9 +84,13 @@ These books are all freely available online:
 
     -   <http://stat545.com/index.html> 
 
-## Resources on specific R-related topics
+## Other resources
 
 This set is to-be-finalized based on what's needed. Here are some for starters:
+
+-   Great resource in terms of covering the main parts and being to the point.
+
+    -   <https://scubed.netlify.app/courses/1_intro_r_tidyverse/>
 
 -   Site includes recordings on Rstudio, R markdown
 
@@ -94,7 +98,11 @@ This set is to-be-finalized based on what's needed. Here are some for starters:
 
 -   ...
 
--   
+## For Stata users
+
+Shared by Leonardo Ferreira: For those that are comfortable working with Stata but new to R, I have come across a few cheat sheets that try to translate Stata commands to R. Here is a post with several examples and a two-page cheat sheet in the end.\
+<https://www.hertiecodingclub.com/learn/rstudio/stata_to_r/>\
+Just good to keep in mind that the way R works is somewhat different from the way Stata does (in terms of structure, environment and objects). So not everything can be translated or thought as if we were coding in Stata.
 
 # Getting going with git(hub)
 
