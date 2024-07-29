@@ -61,3 +61,19 @@ Material:
 -   link to [recording](https://drive.google.com/file/d/1iWz9xb3bLm4HK3FQDXJ5UUVNW7tqlhda/view?usp=sharing)
 
 -   link to R notebook to do Bayesian inference for a population proportion is saved in our github repo in the folder module1, direct link [here](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/everythingisnormal.Rmd).
+
+## Unit 4: Why Bayesians like sampling so much
+
+Material: simulation-based inference, Monte Carlo approximation
+
+-   link to [slides](https://drive.google.com/file/d/17i2EpJstz3RiotKdiqNtv9EtN-4lOx8I/view?usp=sharing)
+
+-   link to [recording](https://drive.google.com/file/d/1KsYvfjG-sFcVnBoqDhMBi8dZFqUqmzOL/view?usp=sharing)
+
+## Unit 5: Introduction to MCMC
+
+Material:
+
+-   link to [slides](https://drive.google.com/file/d/116QZYxGuqqjy2PuptFHPbUvpLBFVAyJp/view?usp=sharing)
+
+-   link to [recording](https://drive.google.com/file/d/1zndVu8Ax1zpJrFwq61CTOGtIger7QCHt/view?usp=sharing)

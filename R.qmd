@@ -91,6 +91,7 @@ This set is to-be-finalized based on what's needed. Here are some for starters:
 -   Great resource in terms of covering the main parts and being to the point.
 
     -   <https://scubed.netlify.app/courses/1_intro_r_tidyverse/>
+    -   Please note that there is a self-paced version of the course I linked to, you just need to click on free materials <https://introduction-r-tidyverse.netlify.app/>
 
 -   Site includes recordings on Rstudio, R markdown
 

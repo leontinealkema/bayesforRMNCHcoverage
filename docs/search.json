@@ -42,6 +42,20 @@
     "text": "Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion\nMaterial:\n\nlink to slides\nlink to recording\nlink to R notebook to do Bayesian inference for a population proportion is saved in our github repo in the folder module1, direct link here."
   },
   {
+    "objectID": "modules.html#unit-4-why-bayesians-like-sampling-so-much",
+    "href": "modules.html#unit-4-why-bayesians-like-sampling-so-much",
+    "title": "Training in Bayesian modeling",
+    "section": "Unit 4: Why Bayesians like sampling so much",
+    "text": "Unit 4: Why Bayesians like sampling so much\nMaterial: simulation-based inference, Monte Carlo approximation\n\nlink to slides\nlink to recording"
+  },
+  {
+    "objectID": "modules.html#unit-5-introduction-to-mcmc",
+    "href": "modules.html#unit-5-introduction-to-mcmc",
+    "title": "Training in Bayesian modeling",
+    "section": "Unit 5: Introduction to MCMC",
+    "text": "Unit 5: Introduction to MCMC\nMaterial:\n\nlink to slides\nlink to recording"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Countdown Bayesian statistical modeling capacity strengthening and analysis project",
@@ -88,7 +102,7 @@
     "href": "R.html#other-resources",
     "title": "Overview",
     "section": "Other resources",
-    "text": "Other resources\nThis set is to-be-finalized based on what’s needed. Here are some for starters:\n\nGreat resource in terms of covering the main parts and being to the point.\n\nhttps://scubed.netlify.app/courses/1_intro_r_tidyverse/\n\nSite includes recordings on Rstudio, R markdown\n\nhttps://datavizf23.classes.andrewheiss.com/lesson/01-lesson.html\n\n…"
+    "text": "Other resources\nThis set is to-be-finalized based on what’s needed. Here are some for starters:\n\nGreat resource in terms of covering the main parts and being to the point.\n\nhttps://scubed.netlify.app/courses/1_intro_r_tidyverse/\nPlease note that there is a self-paced version of the course I linked to, you just need to click on free materials https://introduction-r-tidyverse.netlify.app/\n\nSite includes recordings on Rstudio, R markdown\n\nhttps://datavizf23.classes.andrewheiss.com/lesson/01-lesson.html\n\n…"
   },
   {
     "objectID": "R.html#for-stata-users",
