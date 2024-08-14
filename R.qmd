@@ -58,7 +58,7 @@ To do so, we recommend just downloading the entire repository again as per step 
 
 ## Step 3: Open your BayesCoverageTraining R studio project and start working with the code for the module
 
-As explained in Step 3, you will have a local directory with BayesCoverageTraining.Rproj in it. Click on that Rproj file to start working away (see recording for a quick intro).
+As explained in Step 3, you will have a local directory with BayesCoverageTraining.Rproj in it. Click on that Rproj file to start working away (see recording [R demo - getting started](https://drive.google.com/file/d/1-E1E9VITuMqB67pVhISZbZhCyY9yYRV-/view?usp=sharing) for a quick intro).
 
 We recommend always to start with opening the project file (to start an R studio session), as opposed to opening just the file you want to use, to have the right set up.
 
