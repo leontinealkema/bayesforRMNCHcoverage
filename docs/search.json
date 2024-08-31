@@ -56,6 +56,13 @@
     "text": "Unit 5: Introduction to MCMC\nMaterial:\n\nlink to slides\nlink to recording"
   },
   {
+    "objectID": "modules.html#unit-6-lets-stan",
+    "href": "modules.html#unit-6-lets-stan",
+    "title": "Training in Bayesian modeling",
+    "section": "Unit 6: Let’s Stan!",
+    "text": "Unit 6: Let’s Stan!\nThe slides and recording start with a summary of units 4 and 5, followed by unit 6. The recording ends with a demo of how to get started with brms using the notebook:\n\nlink to slides\nlink to recording\nR notebook to get started with brms (saved in our github repo in the folder module1, direct link here)\n\nOnce you can run the brm-function, use this notebook to check out more examples of fitting Bayesian regression models using brm:\n\nLink to R notebook in repo and the corresponding knitted pdf"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Countdown Bayesian statistical modeling capacity strengthening and analysis project",

@@ -77,3 +77,33 @@ Material:
 -   link to [slides](https://drive.google.com/file/d/116QZYxGuqqjy2PuptFHPbUvpLBFVAyJp/view?usp=sharing)
 
 -   link to [recording](https://drive.google.com/file/d/1zndVu8Ax1zpJrFwq61CTOGtIger7QCHt/view?usp=sharing)
+
+## Unit 6: Let's Stan!
+
+The slides and recording start with a summary of units 4 and 5, followed by unit 6. The recording ends with a demo of how to get started with brms using the notebook:
+
+-   link to [slides](https://drive.google.com/file/d/144IS40rfKVEiArZIVZJ8bWyR01pHsb1i/view?usp=sharing)
+
+-   link to [recording](https://drive.google.com/file/d/1EH3j-qUFnmkA-gA008ETax--cYXBb77r/view?usp=sharing)
+
+-   R notebook to get started with brms (saved in our github repo in the folder module1, direct link [here](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/brms_gettingstarted.Rmd))
+
+Once you can run the brm-function, use this notebook to check out more examples of fitting Bayesian regression models using brm:
+
+-   Link to [R notebook](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/brms_fitregressionmodels.Rmd) in repo and the corresponding [knitted pdf](https://drive.google.com/file/d/1T6Juh2eg3CULtVHnpLzPwoJ7Xu4_1Tkx/view?usp=sharing)
+
+# Module 2: Hierarchical (or multilevel) models 
+
+In this module, we're going to discuss how to exchange information between populations using hierarchical models, which are also called multilevel models, and fit such models using the brm function.
+
+To introduce the topic, we are using material from a different course:
+
+-   Unit 1 (referred to as module 7 in the course): [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/ERv8djoD_rdDjCy9a5ayYOQBVjC_uAuNqtRiFoOZQrHyqg?e=aFLaDk) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EYH_zu8bguFNnsMel7NerxIBYwe1geB4bA9_jvviBJs7zw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UCLcFW)
+
+-   Unit 2 (referred to as module 8 in the course): [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EboMuHtYaJRAj3mY_jC0_lUBLnUU9IKAMaiTGxnvEOJSTQ?e=qZYWb4) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EcpihxEcPwlCpH0p2GDT2hcBtlntRxc8dtS0FkYlAWbnZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Owprd0)
+
+The example used in this material is the estimation and prediction of radon levels in counties in the US. Radon is a naturally occurring radioactive gas. Its decay products are also radioactive; in high concentrations, they can cause lung cancer (several 1000 deaths/year in the USA). Radon levels vary greatly across US homes. The data we work with contains radon measurements from different counties in the US. One final goal in the two units is to predict radon levels for a specific country or in a non-sampled house using a Bayesian hierarchical regression model. The application was originally taken from the book Gelman and Hill (2006). Data Analysis Using Regression and Multilevel/Hierarchical Models. Cambridge University Press.[ ](http://umass.worldcat.org/title/data-analysis-using-regression-and-multilevelhierarchical-models/oclc/67375137&referer=brief_results)(A great book but outdated now wrt computation; remind me to post a list of references with more recent books!)
+
+Note that in this material, the second unit gets a little more technical and may be beyond what some of you are looking for in this training. Please do go through the material, focusing on trying to understand the main points (i.e, what type of models and predictions are discussed). As usual, feel free to post any questions or comments on slack. We can have more technical discussions if there is an interest, during our meetings or over slack.
+
+In our group meetings, we will do hands-on exercises that focus on a specific application in global health. For our first meeting, the exercise will be based on unit 1.
