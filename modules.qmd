@@ -92,18 +92,32 @@ Once you can run the brm-function, use this notebook to check out more examples 
 
 -   Link to [R notebook](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/brms_fitregressionmodels.Rmd) in repo and the corresponding [knitted pdf](https://drive.google.com/file/d/1T6Juh2eg3CULtVHnpLzPwoJ7Xu4_1Tkx/view?usp=sharing)
 
-# Module 2: Hierarchical (or multilevel) models 
+# Module 2: Hierarchical (or multilevel) models
 
 In this module, we're going to discuss how to exchange information between populations using hierarchical models, which are also called multilevel models, and fit such models using the brm function.
 
 To introduce the topic, we are using material from a different course:
 
--   Unit 1 (referred to as module 7 in the course): [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/ERv8djoD_rdDjCy9a5ayYOQBVjC_uAuNqtRiFoOZQrHyqg?e=aFLaDk) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EYH_zu8bguFNnsMel7NerxIBYwe1geB4bA9_jvviBJs7zw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UCLcFW)
+-   Unit 1 (referred to as module 7 in the course): [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/ERv8djoD_rdDjCy9a5ayYOQBNDZZt2nBzCCZ2otWzMJgBg?e=d0c2rC) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EYH_zu8bguFNnsMel7NerxIBYwe1geB4bA9_jvviBJs7zw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UCLcFW)
 
--   Unit 2 (referred to as module 8 in the course): [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EboMuHtYaJRAj3mY_jC0_lUBLnUU9IKAMaiTGxnvEOJSTQ?e=qZYWb4) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EcpihxEcPwlCpH0p2GDT2hcBtlntRxc8dtS0FkYlAWbnZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Owprd0)
+-   Unit 2 (referred to as module 8 in the course): [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EboMuHtYaJRAj3mY_jC0_lUBfY0z5jThL6JWKR9kidRO-g?e=FIgXW5) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EcpihxEcPwlCpH0p2GDT2hcBtlntRxc8dtS0FkYlAWbnZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Owprd0)
 
 The example used in this material is the estimation and prediction of radon levels in counties in the US. Radon is a naturally occurring radioactive gas. Its decay products are also radioactive; in high concentrations, they can cause lung cancer (several 1000 deaths/year in the USA). Radon levels vary greatly across US homes. The data we work with contains radon measurements from different counties in the US. One final goal in the two units is to predict radon levels for a specific country or in a non-sampled house using a Bayesian hierarchical regression model. The application was originally taken from the book Gelman and Hill (2006). Data Analysis Using Regression and Multilevel/Hierarchical Models. Cambridge University Press.[ ](http://umass.worldcat.org/title/data-analysis-using-regression-and-multilevelhierarchical-models/oclc/67375137&referer=brief_results)(A great book but outdated now wrt computation; remind me to post a list of references with more recent books!)
 
 Note that in this material, the second unit gets a little more technical and may be beyond what some of you are looking for in this training. Please do go through the material, focusing on trying to understand the main points (i.e, what type of models and predictions are discussed). As usual, feel free to post any questions or comments on slack. We can have more technical discussions if there is an interest, during our meetings or over slack.
 
-In our group meetings, we will do hands-on exercises that focus on a specific application in global health. For our first meeting, the exercise will be based on unit 1.
+In our group meetings, we will do hands-on exercises that focus on estimating modern contraceptive use (mCPR). For our first meeting, the exercise concerns the estimation of country-specific mCPR for a given time period using the hierarchical model from unit 1. For the second meeting, we will fit hierarchical regression models to estimate country-year specific mCPR, applying the different types of models introduced in unit 8.
+
+# **Prelude to modules 3 and 4: an introduction to Temporal Models for Multiple Populations** and transition models
+
+Now that we are familiar with Bayesian inference and hierarchical models, we can start to consider model classes and model building blocks that are needed to develop a Bayesian model to estimate and forecast a coverage indicator for a population and time period of interest. 
+
+We will focus on using models in a general model class referred to as Temporal Models for Multiple Populations (TMMPs). The class makes a distinction between the process model, which describes latent trends in the indicator interest, and the data model, which describes the data generating process of the observed data. To start with a general introduction to this class, please consider reading paper 1 below.
+
+Next modules will consider what process and data models to use. Specifically, module 3 will consider what assumptions to make about indicators and how they change with time and module 4 considers the question “How to best use survey and routine data to inform estimates”. In module 3, we will focus on transition models, as described in paper 2 below. 
+
+Readings
+
+1.  Introduction to TMMPs \[focus on the general class as introduced in section 3, consider case studies based on your interest\]: Susmann, Herbert, Monica Alexander, and Leontine Alkema. “Temporal Models for Demographic and Global Health Outcomes in Multiple Populations: Introducing a New Framework to Review and Standardise Documentation of Model Assumptions and Facilitate Model Comparison.” *International Statistical Review* 90, no. 3 (2022): 437–67. <https://doi.org/10.1111/insr.12491>.
+
+2.  Introduction to transition models \[focus on the general set up\]: Susmann, Herbert, and Leontine Alkema. “Flexible Modeling of Demographic Transition Processes with a Bayesian Hierarchical Penalized B-Splines Model.” arXiv, January 23, 2023. <https://doi.org/10.48550/arXiv.2301.09694>.
