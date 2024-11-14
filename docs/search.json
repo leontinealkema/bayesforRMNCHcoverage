@@ -4,7 +4,7 @@
     "href": "modules.html",
     "title": "Training in Bayesian modeling",
     "section": "",
-    "text": "Why would we want to introduce Bayesian statistical models to produce estimates and forecasts for Countdown coverage indicators?\n\nLink to slides\nLink to recording\n\n\n\n\nThe training is divided into 5 modules:\n\nIntroduction to Bayesian inference and Bayesian modeling in global health\nHow to exchange information between populations: Hierarchical models (also called multilevel models)\nHow to best use data to inform estimates: Data models for survey and routine surveillance data  \nWhat assumptions to make about indicators and how they change with time: Time series process models, focused on transition models \nPutting it all together: Using Bayesian hierarchical transition models for model fitting, how to go about it, what to check?\n\nIn each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises. The schedule can be found here."
+    "text": "Why would we want to introduce Bayesian statistical models to produce estimates and forecasts for Countdown coverage indicators?\n\nLink to slides\nLink to recording\n\n\n\n\nThe training is divided into modules:\n\nIntroduction to Bayesian inference and Bayesian modeling in global health\nHow to exchange information between populations: Hierarchical models (also called multilevel models)\nIntroduction to Bayesian modeling of coverage indicators and the Family Planning Estimation Tool (FPET)\n\nIn each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises."
   },
   {
     "objectID": "modules.html#background",
@@ -18,7 +18,7 @@
     "href": "modules.html#training-content",
     "title": "Training in Bayesian modeling",
     "section": "",
-    "text": "The training is divided into 5 modules:\n\nIntroduction to Bayesian inference and Bayesian modeling in global health\nHow to exchange information between populations: Hierarchical models (also called multilevel models)\nHow to best use data to inform estimates: Data models for survey and routine surveillance data  \nWhat assumptions to make about indicators and how they change with time: Time series process models, focused on transition models \nPutting it all together: Using Bayesian hierarchical transition models for model fitting, how to go about it, what to check?\n\nIn each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises. The schedule can be found here."
+    "text": "The training is divided into modules:\n\nIntroduction to Bayesian inference and Bayesian modeling in global health\nHow to exchange information between populations: Hierarchical models (also called multilevel models)\nIntroduction to Bayesian modeling of coverage indicators and the Family Planning Estimation Tool (FPET)\n\nIn each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises."
   },
   {
     "objectID": "modules.html#unit-1-lets-think-like-a-bayesian",

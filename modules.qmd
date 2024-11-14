@@ -18,25 +18,19 @@ Why would we want to introduce Bayesian statistical models to produce estimates 
 
 ## Training content
 
-The training is divided into 5 modules:
+The training is divided into modules:
 
 1.  Introduction to Bayesian inference and Bayesian modeling in global health
 
 2.  How to exchange information between populations: Hierarchical models (also called multilevel models)
 
-3.  How to best use data to inform estimates: Data models for survey and routine surveillance data  
+3.  Introduction to Bayesian modeling of coverage indicators and the Family Planning Estimation Tool (FPET)
 
-4.  What assumptions to make about indicators and how they change with time: Time series process models, focused on transition models 
-
-5.  Putting it all together: Using Bayesian hierarchical transition models for model fitting, how to go about it, what to check?
-
-In each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises. The schedule can be found [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vROdU0FX10fhCk6MeEwB6XQ0m4o_HNY4KhQQ7y77XkAnUtfafx-3fiNrO-VZ4VEmMvgldmKYRt6_ye0/pubhtml?gid=1779572550&single=true "Schedule").
+In each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises.
 
 # Module 1: Introduction to Bayesian inference
 
-![](images/clipboard-3224793780.png)
-
-## ![](images/clipboard-2503681046.png)Unit 1: Let’s think like a Bayesian!
+## Unit 1: Let’s think like a Bayesian!
 
 Material:
 
@@ -108,13 +102,17 @@ Note that in this material, the second unit gets a little more technical and may
 
 In our group meetings, we will do hands-on exercises that focus on estimating modern contraceptive use (mCPR). For our first meeting, the exercise concerns the estimation of country-specific mCPR for a given time period using the hierarchical model from unit 1. For the second meeting, we will fit hierarchical regression models to estimate country-year specific mCPR, applying the different types of models introduced in unit 8.
 
-# **Prelude to modules 3 and 4: an introduction to Temporal Models for Multiple Populations** and transition models
+# **Module 3:** Introduction to Bayesian modeling of coverage indicators and the Family Planning Estimation Tool (FPET)
 
 Now that we are familiar with Bayesian inference and hierarchical models, we can start to consider model classes and model building blocks that are needed to develop a Bayesian model to estimate and forecast a coverage indicator for a population and time period of interest. 
 
-We will focus on using models in a general model class referred to as Temporal Models for Multiple Populations (TMMPs). The class makes a distinction between the process model, which describes latent trends in the indicator interest, and the data model, which describes the data generating process of the observed data. To start with a general introduction to this class, please consider reading paper 1 below.
+We consider a general class of Bayesian hierarchical temporal models that includes the Family Planning Estimation Tool (FPET), a model that is used for estimating and forecasting family planning indicators such as modern contraceptive use, based on survey and routine data. To introduce FPET, this module discusses the following topics:
 
-Next modules will consider what process and data models to use. Specifically, module 3 will consider what assumptions to make about indicators and how they change with time and module 4 considers the question “How to best use survey and routine data to inform estimates”. In module 3, we will focus on transition models, as described in paper 2 below. 
+1.  A general model class referred to as Temporal Models for Multiple Populations (TMMPs). The class makes a distinction between the process model, which describes latent trends in the indicator interest, and the data model, which describes the data generating process of the observed data. To start with a general introduction to this class, please consider reading paper 1 below.
+
+2.  What assumptions to make about indicators and how they change with time: Time series process models, focused on transition models, as described in paper 2 below.  
+
+3.  How to best use data to inform estimates: Data models for survey and routine surveillance data  
 
 Readings
 
