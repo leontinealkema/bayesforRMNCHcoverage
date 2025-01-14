@@ -104,18 +104,22 @@ In our group meetings, we will do hands-on exercises that focus on estimating mo
 
 # **Module 3:** Introduction to Bayesian modeling of coverage indicators and the Family Planning Estimation Tool (FPET)
 
-Now that we are familiar with Bayesian inference and hierarchical models, we can start to consider model classes and model building blocks that are needed to develop a Bayesian model to estimate and forecast a coverage indicator for a population and time period of interest. 
+Now that we are familiar with Bayesian inference and hierarchical models, we can start to consider model classes and model building blocks that are needed to develop a Bayesian model to estimate and forecast a coverage indicator for a population and time period of interest. We consider a general class of Bayesian hierarchical temporal models that includes the Family Planning Estimation Tool (FPET), a model that is used for estimating and forecasting family planning indicators such as modern contraceptive use, based on survey and routine data. 
 
-We consider a general class of Bayesian hierarchical temporal models that includes the Family Planning Estimation Tool (FPET), a model that is used for estimating and forecasting family planning indicators such as modern contraceptive use, based on survey and routine data. To introduce FPET, this module discusses the following topics:
+To introduce FPET, this module discusses the following topics:
 
 1.  A general model class referred to as Temporal Models for Multiple Populations (TMMPs). The class makes a distinction between the process model, which describes latent trends in the indicator interest, and the data model, which describes the data generating process of the observed data. To start with a general introduction to this class, please consider reading paper 1 below.
 
-2.  What assumptions to make about indicators and how they change with time: Time series process models, focused on transition models, as described in paper 2 below.  
+2.  What assumptions to make about indicators and how they change with time: Time series process models, focused on transition models, as described in papers 2 and 3 below.  
 
-3.  How to best use data to inform estimates: Data models for survey and routine surveillance data  
+3.  How to best use data to inform estimates: Data models for survey and routine surveillance data, as described in papers 3 and 4 below.   
 
 Readings
 
 1.  Introduction to TMMPs \[focus on the general class as introduced in section 3, consider case studies based on your interest\]: Susmann, Herbert, Monica Alexander, and Leontine Alkema. “Temporal Models for Demographic and Global Health Outcomes in Multiple Populations: Introducing a New Framework to Review and Standardise Documentation of Model Assumptions and Facilitate Model Comparison.” *International Statistical Review* 90, no. 3 (2022): 437–67. <https://doi.org/10.1111/insr.12491>.
 
-2.  Introduction to transition models \[focus on the general set up\]: Susmann, Herbert, and Leontine Alkema. “Flexible Modeling of Demographic Transition Processes with a Bayesian Hierarchical Penalized B-Splines Model.” arXiv, January 23, 2023. <https://doi.org/10.48550/arXiv.2301.09694>.
+2.  Introduction to transition models \[focus on the general set up\]: Susmann, Herbert, and Leontine Alkema. “Flexible Modeling of Demographic Transition Processes with a Bayesian Hierarchical Penalized B-Splines Model.” arXiv, 2023. <https://doi.org/10.48550/arXiv.2301.09694>.
+
+3.  FPET overview paper, it discusses the process model and data models for survey data and routine data: Alkema, Leontine, Herbert Susmann, Evan Ray, Shauna Mooney, Niamh Cahill, Kristin Bietsch, A. A. Jayachandran, et al. “Statistical Demography Meets Ministry of Health: The Case of the Family Planning Estimation Tool.” arXiv, 2024. <https://doi.org/10.48550/arXiv.2501.00007>.
+
+4.  Details on how survey data are used in FPET: Alkema, Leontine, Herbert Susmann, and Evan Ray. “Temporal Models for Demographic and Global Health Outcomes in Multiple Populations: Introducing the Normal-with-Optional-Shrinkage Data Model Class.” arXiv, 2024. <https://doi.org/10.48550/arXiv.2411.18646>.
