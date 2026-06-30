@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>WIP – BayesCoverage</title>
+<title>Family Planning Estimation Tool (FPET) – BayesCoverage</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./fpet.html" aria-current="page"> 
-<span class="menu-text">Family Planning Estimation Tool (FPET)</span></a>
+<span class="menu-text">FPET</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./bayescoverage.html"> 
@@ -123,15 +123,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References:</a></li>
+  </ul></li>
+  <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">WIP</h1>
+<h1 class="title">Family Planning Estimation Tool (FPET)</h1>
 </div>
 
 
@@ -148,9 +158,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>WIP</p>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<p>The Family Planning Estimation Tool (FPET) was designed to produce annual estimates and forecasts of family planning indicators such as modern contraceptive use (mCPR), unmet need, and demand satisfied by modern methods. FPET considers survey data, service statistics (where determined to be of adequate quality), and regional and global historical patterns of change to produce annual estimates beyond the last survey and into the future.</p>
+<p>The current modeling approach is described in Alkema et al.&nbsp;(2024). This approach builds off collaborative research with the United Nations Population Division (UNPD). References to earlier and related work are included below.</p>
+<p>This work was supported, in whole or in part, by the Gates Foundation (INV-00844).</p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References:</h2>
+<ul>
+<li><p>FPET overview: L. Alkema, H. Susmann, E. Ray, S. Mooney, N. Cahill, K. Bietsch, A. Jayachandran, et al.&nbsp;(2024). Bayesian Statistical Modeling in Action for Estimation and Forecasting in Low- and Middle-income Countries: The Case of the Family Planning Estimation Tool. See <a href="https://doi.org/10.48550/arXiv.2501.00007" class="uri">https://doi.org/10.48550/arXiv.2501.00007</a>.</p></li>
+<li><p>Use of service statistics data (Estimated modern use): S. Mooney, L. Alkema, E. Sonneveldt, K. Bietsch, J. Williamson, N. Cahill (2024). Enhancing the Use of Family Planning Service Statistics Using a Bayesian Modelling Approach to Inform Estimates of Modern Contraceptive Use in Low- and Middle-Income Countries. See <a href="https://doi.org/10.48550/arXiv.2412.08606" class="uri">https://doi.org/10.48550/arXiv.2412.08606</a>.</p></li>
+</ul>
+<p>References that describe earlier approaches:</p>
+<ul>
+<li><p>Alkema, L. et al.&nbsp;(2013). National, regional and global rates and trends in contraceptive prevalence and unmet need for family planning between 1990 and 2015: a systematic and comprehensive analysis. The Lancet. Available at <a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(12)62204-1/abstract" class="uri">http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(12)62204-1/abstract</a>.</p></li>
+<li><p>Cahill et al., (2017). Modern contraceptive use, unmet need, and demand satisfied among women of reproductive age who are married or in a union in the focus countries of the Family Planning 2020 initiative: a systematic analysis using the Family Planning Estimation Tool. The Lancet. Available at <a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)33104-5/fulltext" class="uri">http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)33104-5/fulltext</a>.</p></li>
+<li><p>Kantorova et al.&nbsp;(2020). Estimating progress towardsmeeting women’s contraceptive needs in 185 countries: A Bayesian hierarchical modellingstudy. PLOS Medicine, 17(2):e1003026. Available at <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003026" class="uri">https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003026</a>.</p></li>
+<li><p>Wheldon et al.&nbsp;(2018). Methods for estimating and projecting key family planning indicators among all women of reproductive age. United Nations, Department of Economic and Social Affairs, Population Division, Technical Paper No.&nbsp;2. New York: United Nations. Available at <a href="https://www.un.org/en/development/desa/population/publications/pdf/technical/TP2018-2.pdf" class="uri">https://www.un.org/en/development/desa/population/publications/pdf/technical/TP2018-2.pdf</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="software" class="level1">
+<h1>Software</h1>
+<p>The model is written in R and Stan. The R package is available at <a href="https://github.com/AlkemaLab/fpet2" class="uri">https://github.com/AlkemaLab/fpet2</a> and described at <a href="https://alkemalab.github.io/fpet2/" class="uri">https://alkemalab.github.io/fpet2/</a>. For any questions, feedback or suggestions, please contact Leontine at lalkema(at)umass.edu.</p>
+<p>An online app by the Track20 project is available at <a href="https://fpet.track20.org/" class="uri">https://fpet.track20.org/</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

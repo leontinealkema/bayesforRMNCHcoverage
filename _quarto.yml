@@ -9,7 +9,7 @@ website:
       - href: index.qmd
         text: About
       - href: fpet.qmd
-        text: Family Planning Estimation Tool (FPET)
+        text: FPET
       - href: bayescoverage.qmd
         text: Bayesian coverage modeling 
       - href: modules.qmd
