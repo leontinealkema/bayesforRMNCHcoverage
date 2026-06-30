@@ -11,7 +11,7 @@ website:
       - href: fpet.qmd
         text: FPET
       - href: bayescoverage.qmd
-        text: Bayesian coverage modeling 
+        text: Coverage modeling 
       - href: modules.qmd
         text: Training - let’s go Bayesian
       - href: R.qmd
