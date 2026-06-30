@@ -1,5 +1,5 @@
 ---
-title: "Training in Bayesian modeling"
+title: ""
 format:
   html:
     link-external-icon: true
@@ -8,13 +8,15 @@ format:
 
 # Overview
 
+This page includes slides and recordings to learn about Bayesian modeling.
+
 ## Background
 
 Why would we want to introduce Bayesian statistical models to produce estimates and forecasts for Countdown coverage indicators?
 
--   Link to [slides](https://drive.google.com/file/d/1NP_WYZ5ffhWL1b4AY8v0Kd4HFWwMx8_w/view?usp=sharing "Slides 0 intro")
+- Link to [slides](https://drive.google.com/file/d/1NP_WYZ5ffhWL1b4AY8v0Kd4HFWwMx8_w/view?usp=sharing "Slides 0 intro")
 
--   Link to [recording](https://drive.google.com/file/d/1XREbv8VWpi_EwR86b_jazfzv0BxsA-e5/view?usp=drive_link "Recoding 0 intro")
+- Link to [recording](https://drive.google.com/file/d/1XREbv8VWpi_EwR86b_jazfzv0BxsA-e5/view?usp=drive_link "Recoding 0 intro")
 
 ## Training content
 
@@ -34,57 +36,57 @@ In each module, topics include conceptual understanding as well as hands-on anal
 
 Material:
 
--   link to [slides](https://drive.google.com/file/d/1z9NJUKhz69qRXmkAG9oUQwf897amQBMX/view?usp=sharing)
+- link to [slides](https://drive.google.com/file/d/1z9NJUKhz69qRXmkAG9oUQwf897amQBMX/view?usp=sharing)
 
--   link to [recording](https://drive.google.com/file/d/1iCdMeuFPDq-WXhSOat8dH748pndwi9CL/view?usp=sharing)
+- link to [recording](https://drive.google.com/file/d/1iCdMeuFPDq-WXhSOat8dH748pndwi9CL/view?usp=sharing)
 
 ## Unit 2: Bayesian inference for a population proportion
 
 Material:
 
--   link to [slides](https://drive.google.com/file/d/1EiTjmIk7b0hTnQuV7Y7BcIr4xGi_nPMG/view?usp=sharing)
+- link to [slides](https://drive.google.com/file/d/1EiTjmIk7b0hTnQuV7Y7BcIr4xGi_nPMG/view?usp=sharing)
 
--   link to [recording](https://drive.google.com/file/d/13G8Ww5woPQ-vUDsxZyS4psiIGANfOFSL/view?usp=sharing), note that the start of the recording has an issue with the screen capture of the title slide but that resolves itself on the 2nd slide.
+- link to [recording](https://drive.google.com/file/d/13G8Ww5woPQ-vUDsxZyS4psiIGANfOFSL/view?usp=sharing), note that the start of the recording has an issue with the screen capture of the title slide but that resolves itself on the 2nd slide.
 
 ## Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion
 
 Material:
 
--   link to [slides](https://drive.google.com/file/d/1AcOfCtARyVf11UpO3bAucVHam1tzAEKa/view?usp=sharing)
+- link to [slides](https://drive.google.com/file/d/1AcOfCtARyVf11UpO3bAucVHam1tzAEKa/view?usp=sharing)
 
--   link to [recording](https://drive.google.com/file/d/1iWz9xb3bLm4HK3FQDXJ5UUVNW7tqlhda/view?usp=sharing)
+- link to [recording](https://drive.google.com/file/d/1iWz9xb3bLm4HK3FQDXJ5UUVNW7tqlhda/view?usp=sharing)
 
--   link to R notebook to do Bayesian inference for a population proportion is saved in our github repo in the folder module1, direct link [here](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/everythingisnormal.Rmd).
+- link to R notebook to do Bayesian inference for a population proportion is saved in our github repo in the folder module1, direct link [here](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/everythingisnormal.Rmd).
 
 ## Unit 4: Why Bayesians like sampling so much
 
 Material: simulation-based inference, Monte Carlo approximation
 
--   link to [slides](https://drive.google.com/file/d/17i2EpJstz3RiotKdiqNtv9EtN-4lOx8I/view?usp=sharing)
+- link to [slides](https://drive.google.com/file/d/17i2EpJstz3RiotKdiqNtv9EtN-4lOx8I/view?usp=sharing)
 
--   link to [recording](https://drive.google.com/file/d/1KsYvfjG-sFcVnBoqDhMBi8dZFqUqmzOL/view?usp=sharing)
+- link to [recording](https://drive.google.com/file/d/1KsYvfjG-sFcVnBoqDhMBi8dZFqUqmzOL/view?usp=sharing)
 
 ## Unit 5: Introduction to MCMC
 
 Material:
 
--   link to [slides](https://drive.google.com/file/d/116QZYxGuqqjy2PuptFHPbUvpLBFVAyJp/view?usp=sharing)
+- link to [slides](https://drive.google.com/file/d/116QZYxGuqqjy2PuptFHPbUvpLBFVAyJp/view?usp=sharing)
 
--   link to [recording](https://drive.google.com/file/d/1zndVu8Ax1zpJrFwq61CTOGtIger7QCHt/view?usp=sharing)
+- link to [recording](https://drive.google.com/file/d/1zndVu8Ax1zpJrFwq61CTOGtIger7QCHt/view?usp=sharing)
 
 ## Unit 6: Let's Stan!
 
 The slides and recording start with a summary of units 4 and 5, followed by unit 6. The recording ends with a demo of how to get started with brms using the notebook:
 
--   link to [slides](https://drive.google.com/file/d/144IS40rfKVEiArZIVZJ8bWyR01pHsb1i/view?usp=sharing)
+- link to [slides](https://drive.google.com/file/d/144IS40rfKVEiArZIVZJ8bWyR01pHsb1i/view?usp=sharing)
 
--   link to [recording](https://drive.google.com/file/d/1EH3j-qUFnmkA-gA008ETax--cYXBb77r/view?usp=sharing)
+- link to [recording](https://drive.google.com/file/d/1EH3j-qUFnmkA-gA008ETax--cYXBb77r/view?usp=sharing)
 
--   R notebook to get started with brms (saved in our github repo in the folder module1, direct link [here](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/brms_gettingstarted.Rmd))
+- R notebook to get started with brms (saved in our github repo in the folder module1, direct link [here](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/brms_gettingstarted.Rmd))
 
 Once you can run the brm-function, use this notebook to check out more examples of fitting Bayesian regression models using brm:
 
--   Link to [R notebook](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/brms_fitregressionmodels.Rmd) in repo and the corresponding [knitted pdf](https://drive.google.com/file/d/1T6Juh2eg3CULtVHnpLzPwoJ7Xu4_1Tkx/view?usp=sharing)
+- Link to [R notebook](https://github.com/AlkemaLab/BayesCoverageTraining/blob/main/module1_intro2bayes/brms_fitregressionmodels.Rmd) in repo and the corresponding [knitted pdf](https://drive.google.com/file/d/1T6Juh2eg3CULtVHnpLzPwoJ7Xu4_1Tkx/view?usp=sharing)
 
 # Module 2: Hierarchical (or multilevel) models
 
@@ -92,9 +94,9 @@ In this module, we're going to discuss how to exchange information between popul
 
 To introduce the topic, we are using material from a different course:
 
--   Unit 1 (referred to as module 7 in the course): [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/ERv8djoD_rdDjCy9a5ayYOQBNDZZt2nBzCCZ2otWzMJgBg?e=d0c2rC) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EYH_zu8bguFNnsMel7NerxIBYwe1geB4bA9_jvviBJs7zw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UCLcFW)
+- Unit 1 (referred to as module 7 in the course): [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/ERv8djoD_rdDjCy9a5ayYOQBNDZZt2nBzCCZ2otWzMJgBg?e=d0c2rC) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EYH_zu8bguFNnsMel7NerxIBYwe1geB4bA9_jvviBJs7zw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UCLcFW)
 
--   Unit 2 (referred to as module 8 in the course): [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EboMuHtYaJRAj3mY_jC0_lUBfY0z5jThL6JWKR9kidRO-g?e=FIgXW5) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EcpihxEcPwlCpH0p2GDT2hcBtlntRxc8dtS0FkYlAWbnZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Owprd0)
+- Unit 2 (referred to as module 8 in the course): [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EboMuHtYaJRAj3mY_jC0_lUBfY0z5jThL6JWKR9kidRO-g?e=FIgXW5) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EcpihxEcPwlCpH0p2GDT2hcBtlntRxc8dtS0FkYlAWbnZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Owprd0)
 
 The example used in this material is the estimation and prediction of radon levels in counties in the US. Radon is a naturally occurring radioactive gas. Its decay products are also radioactive; in high concentrations, they can cause lung cancer (several 1000 deaths/year in the USA). Radon levels vary greatly across US homes. The data we work with contains radon measurements from different counties in the US. One final goal in the two units is to predict radon levels for a specific country or in a non-sampled house using a Bayesian hierarchical regression model. The application was originally taken from the book Gelman and Hill (2006). Data Analysis Using Regression and Multilevel/Hierarchical Models. Cambridge University Press.[ ](http://umass.worldcat.org/title/data-analysis-using-regression-and-multilevelhierarchical-models/oclc/67375137&referer=brief_results)(A great book but outdated now wrt computation; remind me to post a list of references with more recent books!)
 
@@ -103,6 +105,8 @@ Note that in this material, the second unit gets a little more technical and may
 In our group meetings, we will do hands-on exercises that focus on estimating modern contraceptive use (mCPR). For our first meeting, the exercise concerns the estimation of country-specific mCPR for a given time period using the hierarchical model from unit 1. For the second meeting, we will fit hierarchical regression models to estimate country-year specific mCPR, applying the different types of models introduced in unit 8.
 
 # **Module 3:** Introduction to Bayesian modeling of coverage indicators and the Family Planning Estimation Tool (FPET)
+
+Update June 2026: this information is outdated and will be updated soon!
 
 Now that we are familiar with Bayesian inference and hierarchical models, we can start to consider model classes and model building blocks that are needed to develop a Bayesian model to estimate and forecast a coverage indicator for a population and time period of interest. We consider a general class of Bayesian hierarchical temporal models that includes the Family Planning Estimation Tool (FPET), a model that is used for estimating and forecasting family planning indicators such as modern contraceptive use, based on survey and routine data. 
 

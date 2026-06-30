@@ -1,19 +1,17 @@
 ---
-title: "Countdown Bayesian statistical modeling capacity strengthening and analysis project"
+title: "Bayesian coverage modeling"
 format:
   html:
     link-external-icon: true
     link-external-newwindow: true
 ---
 
-Welcome to the website of the Countdown Bayesian statistical modeling capacity strengthening and analysis project!
+Welcome to the website of the Countdown Bayesian coverage modeling project!
 
-The goal of the 2024 Countdown Bayesian statistical modeling capacity strengthening and analysis project is to introduce statistical models to produce estimates and forecasts for Countdown coverage indicators. Focus is on a general class of Bayesian hierarchical temporal models that includes FPET, a model that is used for estimating and forecasting family planning indicators such as modern contraceptive use, based on survey and routine data. 
+This project started as a statistical modeling capacity strengthening and analysis project in 2024. The goal of the project was to introduce statistical models to produce estimates and forecasts for Countdown coverage indicators. We focused on a general class of Bayesian hierarchical temporal models that includes FPET, a model that is used for estimating and forecasting family planning indicators such as modern contraceptive use, based on survey and routine data. The next page provides information on FPET.
 
-The project includes a training and analysis component. In the training part of this project, participants will be introduced to Bayesian models, with specific applications to using a Bayesian hierarchical temporal model like FPET for estimation and forecasting of indicators at the national and subnational level.  The training aims to provide a conceptual understanding of Bayesian models. Additional training objectives include data exploration and model fitting, using open-source software R and Stan for computation. By the end of the training, participants can fit models to new indicators of interest, interpret and check results, and modify the modeling approach as relevant. 
+The project included a training component, where participants were introduced to Bayesian models, with specific applications to using a Bayesian hierarchical temporal model like FPET for estimation and forecasting of indicators at the national and subnational level.  The training aimed to provide a conceptual understanding of Bayesian models. Additional training objectives included data exploration and model fitting, using open-source software R and Stan for computation. The training pages on this website contain the training materials.
 
-The analysis component takes place as part of the training and continues afterwards to finalize models to be used for CAM2025. Analyses and model development will focus on the percentage of births in facilities and immunization coverage (PENTA3). Coverage related to antenatal care (ANC4) may be considered as well. The modeling will focus on national and admin1 estimates and, where possible, estimates at lower levels of disaggregation.
-
-All materials are licensed under CC-BY-NC 4.0. Code is licensed under BSD-3.
+We developed a model to estimate and forecast coverage indicators using survey data and routine data. Since 2026, the modeling approach is available in R packages and included in the Countdown data suite. More information is provided on this website.
 
 Contact: Leontine Alkema (lalkema\@umass.edu)

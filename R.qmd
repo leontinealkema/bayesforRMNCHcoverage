@@ -4,13 +4,11 @@ title: ""
 
 # Overview
 
-All code for this training will be made available in a public repository (repo) on Github: <https://github.com/AlkemaLab/BayesCoverageTraining>.
+Code for the Bayesian modeling training is available in a public repository (repo) on Github: <https://github.com/AlkemaLab/BayesCoverageTraining>.
 
-We will use the open-source software R for analyses and computations, through its user-friendly interface R-studio (https://posit.co/products/open-source/rstudio/). For model fitting, R packages and extensions are used such that all analyses take place in R. Analysis scripts will be provided for example analyses and discussed in recordings.
+We use the open-source software R for analyses and computations, through its user-friendly interface R-studio (https://posit.co/products/open-source/rstudio/). For model fitting, R packages and extensions are used such that all analyses take place in R. Analysis scripts will be provided for example analyses and discussed in recordings.
 
 The remainder of this page contains resources for those of you new to R, and a workflow for non-Github users.
-
-Note that this is a live document and will be updated as the training progresses. If you have a good resource to share, please let us know on the R slack channel!
 
 # Steps to get set up with R/R studio for new users
 
@@ -32,19 +30,19 @@ Github refers to a hosting service for projects that use a version control syste
 
 1.  Download the repo 
 
--   Go to <https://github.com/AlkemaLab/BayesCoverageTraining>
+- Go to <https://github.com/AlkemaLab/BayesCoverageTraining>
 
--   Click on “Code” (green button), then “download zip”, see screenshot 1 below.
+- Click on “Code” (green button), then “download zip”, see screenshot 1 below.
 
 ![](images/clipboard-2092824590.png){width="679"}
 
 2.  Set up your local folder with your Rstudio project 
 
--   Place the zipped downloaded file in a place where you can find it again: this directory will contain all your R code for the training
+- Place the zipped downloaded file in a place where you can find it again: this directory will contain all your R code for the training
 
--   Unzip the downloaded file
+- Unzip the downloaded file
 
--   Click on “BayesCoverageTraining.Rproj” to open your project in R studio, see screenshot 2.
+- Click on “BayesCoverageTraining.Rproj” to open your project in R studio, see screenshot 2.
 
 ![](images/clipboard-1170151898.png){width="417"}
 
@@ -74,30 +72,30 @@ If you’re completely new to R, we recommend to consider one of gazillion great
 
 These books are all freely available online:
 
--   R for Data Science (first published in 2017, now on 2(+?) edition, content updated on website). Hadley Wickham and Garrett Grolemund. O'Reilly Media, Inc. <https://r4ds.hadley.nz/>
+- R for Data Science (first published in 2017, now on 2(+?) edition, content updated on website). Hadley Wickham and Garrett Grolemund. O'Reilly Media, Inc. <https://r4ds.hadley.nz/>
 
--   Statistical Inference via Data Science: A Modern Dive into R and the Tidyverse (2020). Chester Ismay and Albert Y. Kim. Chapman & Hall/CRC The R Series. <https://moderndive.com>
+- Statistical Inference via Data Science: A Modern Dive into R and the Tidyverse (2020). Chester Ismay and Albert Y. Kim. Chapman & Hall/CRC The R Series. <https://moderndive.com>
 
--   (short) courses with great reference material (perhaps some of it is a little outdated by now but intro material, ie on R, R studio, objects, markdown, dplyr basics is still relevant):
+- (short) courses with great reference material (perhaps some of it is a little outdated by now but intro material, ie on R, R studio, objects, markdown, dplyr basics is still relevant):
 
-    -   <https://github.com/rstudio-education/remaster-the-tidyverse>
+  - <https://github.com/rstudio-education/remaster-the-tidyverse>
 
-    -   <http://stat545.com/index.html> 
+  - <http://stat545.com/index.html> 
 
 ## Other resources
 
-This set is to-be-finalized based on what's needed. Here are some for starters:
+Here are some for starters:
 
--   Great resource in terms of covering the main parts and being to the point.
+- Great resource in terms of covering the main parts and being to the point.
 
-    -   <https://scubed.netlify.app/courses/1_intro_r_tidyverse/>
-    -   Please note that there is a self-paced version of the course I linked to, you just need to click on free materials <https://introduction-r-tidyverse.netlify.app/>
+  - <https://scubed.netlify.app/courses/1_intro_r_tidyverse/>
+  - Please note that there is a self-paced version of the course I linked to, you just need to click on free materials <https://introduction-r-tidyverse.netlify.app/>
 
--   Site includes recordings on Rstudio, R markdown
+- Site includes recordings on Rstudio, R markdown
 
-    -   <https://datavizf23.classes.andrewheiss.com/lesson/01-lesson.html>
+  - <https://datavizf23.classes.andrewheiss.com/lesson/01-lesson.html>
 
--   ...
+- ...
 
 ## For Stata users
 
@@ -109,12 +107,12 @@ Just good to keep in mind that the way R works is somewhat different from the wa
 
 Some brief steps:
 
--   Get a github account
+- Get a github account
 
--   Recommended steps to get started using Rstudio build-in functionality: 
+- Recommended steps to get started using Rstudio build-in functionality: 
 
-    -   Connect your Rstudio with github, here is an “how-to-set-it-up” explanation [https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio](https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio/)
+  - Connect your Rstudio with github, here is an “how-to-set-it-up” explanation [https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio](https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio/)
 
-    -   Consider an Rstudio-based workflow such as this one <https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r>
+  - Consider an Rstudio-based workflow such as this one <https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r>
 
 Once you get going, you may want to learn more. This is a great book: <https://happygitwithr.com/>

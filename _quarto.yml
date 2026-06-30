@@ -8,11 +8,14 @@ website:
     left:
       - href: index.qmd
         text: About
+      - href: fpet.qmd
+        text: Family Planning Estimation Tool (FPET)
+      - href: bayescoverage.qmd
+        text: Bayesian coverage modeling 
       - href: modules.qmd
-        text: Let's go Bayesian!
+        text: Training - let’s go Bayesian
       - href: R.qmd
-        text: Learning R
-      
+        text: Training - let’s use R and git(hub)!
 
 format:
   html:
