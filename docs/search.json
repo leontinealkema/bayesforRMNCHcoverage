@@ -126,6 +126,20 @@
     "text": "Illustrative examples\nEstimates are produced for the proportion of women who receive the recommended minimum of at least four antenatal care visits during pregnancy (referred to as ANC4), the proportion of live births that take place in a health facility (referred to as institutional deliveries), and the proportion of children who receive the recommended three doses of pentavalent vaccine (referred to as vaccination coverage).\nThe figure below shows example data and estimates obtained from the model for a coverage indicator in four different regions. The plots show that the model’s estimates usually follow the survey data, unless a data point is very uncertain and does not match the overall trend. For example, in Region B, the most recent MICS survey point is lower than expected and very uncertain, so the model’s recent estimates do not exactly align with this survey.\nWe also see that routine data help inform how quickly coverage is changing over time, particularly after the most recent survey, when no new survey data is available. For example, in Region C, the routine data show an increase in coverage. As a result, the estimates that include routine data show a faster rate of change during that period compared to the estimates based only on survey data. In contrast, in Region D, routine data suggest that coverage has not increased recently and estimates that include routine data reflect that information.\n\nFigure 2: Example data and estimates. Survey data from DHS and MICS are shown in red and blue, with vertical bars indicating how uncertain each survey point is. Routine data are shown in black. The lines represent the model’s point estimates with shaded areas highlighting uncertainty (in red if routine data were included, black/green otherwise)."
   },
   {
+    "objectID": "bayescoverage.html#countdown-data-suite",
+    "href": "bayescoverage.html#countdown-data-suite",
+    "title": "Summary",
+    "section": "Countdown data suite",
+    "text": "Countdown data suite\nThe Countdown data suite is available at https://datasuite.vercel.app/en, instructions can be found on the website. An example of the output for ANC4 coverage at the national level is shown in Figure 3 below. The graph displays survey data and routine data as dots (grey for routine data, red for survey data). The red line represents the modeled point estimates, and the red shaded areas represent the 95% uncertainty intervals.\n\nFigure 3: Data and Bayesian estimates. DHS data (red dots), routine data (grey dots), and Bayesian modeled estimates (red lines are point estimates, shaded area are 95% uncertainty intervals). \u000b\nExample outputs for subnational coverage estimation for 2025 are shown in Figure 4. Red dots represent point estimates, and horizontal lines represent 95% uncertainty intervals.\n\n\n\nFigure 4: Bayesian estimates for admin1 regions. Legend: Bayesian point estimates (red dots) and 95% uncertainty intervals (horizontal lines)."
+  },
+  {
+    "objectID": "bayescoverage.html#bayescoverage-r-packages-and-r-shiny-app",
+    "href": "bayescoverage.html#bayescoverage-r-packages-and-r-shiny-app",
+    "title": "Summary",
+    "section": "BayesCoverage R packages and R Shiny app",
+    "text": "BayesCoverage R packages and R Shiny app\nThe Bayesian model is implemented in R and Stan through the bayescoveragemodel R package (see https://alkemalab.github.io/bayescoveragemodel/). Country-specific models can be fitted quickly using an R Shiny app available at https://github.com/AlkemaLab/bayescoverage_app.\nTo simplify installation and avoid C++ compiler issues, the app uses the bayescoveragedeploy package (https://github.com/AlkemaLab/bayescoveragedeploy/), which includes precompiled Stan models. With the deploy package, you can run the Shiny app without installing cmdstanr or other dependencies. The deploy package is available at https://alkemalab.r-universe.dev/builds."
+  },
+  {
     "objectID": "R.html",
     "href": "R.html",
     "title": "Overview",

@@ -138,7 +138,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#how-are-routine-data-used" id="toc-how-are-routine-data-used" class="nav-link" data-scroll-target="#how-are-routine-data-used">How are routine data used?</a></li>
   <li><a href="#illustrative-examples" id="toc-illustrative-examples" class="nav-link" data-scroll-target="#illustrative-examples">Illustrative examples</a></li>
   </ul></li>
-  <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
+  <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a>
+  <ul class="collapse">
+  <li><a href="#countdown-data-suite" id="toc-countdown-data-suite" class="nav-link" data-scroll-target="#countdown-data-suite">Countdown data suite</a></li>
+  <li><a href="#bayescoverage-r-packages-and-r-shiny-app" id="toc-bayescoverage-r-packages-and-r-shiny-app" class="nav-link" data-scroll-target="#bayescoverage-r-packages-and-r-shiny-app">BayesCoverage R packages and R Shiny app</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -196,10 +200,27 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="software" class="level1">
 <h1>Software</h1>
-<p>The Bayesian model can be fitted quickly to country data through an R Shiny app available at <a href="https://github.com/AlkemaLab/bayescoverage_app" class="uri">https://github.com/AlkemaLab/bayescoverage_app</a>. Modeled estimates can also be obtained through the Countdown data suite, see <a href="https://datasuite.vercel.app/en" class="uri">https://datasuite.vercel.app/en</a>.</p>
-<p>Further details: The modeling is based on the R package <code>bayescoveragemodel</code>, see <a href="https://alkemalab.github.io/bayescoveragemodel/" class="uri">https://alkemalab.github.io/bayescoveragemodel/</a>. However, to avoid installation issues related to C++ compilers, we added the Bayescoveragedeploy package, see <a href="https://github.com/AlkemaLab/bayescoveragedeploy/" class="uri">https://github.com/AlkemaLab/bayescoveragedeploy/</a>, which contains precompiled Stan models. Through the deploy package, you can use the Shiny app without needing to install cmdstanr etc on your machine. The deploy package is available here: <a href="https://alkemalab.r-universe.dev/builds" class="uri">https://alkemalab.r-universe.dev/builds</a></p>
+<p>Modeled estimates can be obtained through the Countdown data suite or with the BayesCoverage R packages.</p>
+<section id="countdown-data-suite" class="level2">
+<h2 class="anchored" data-anchor-id="countdown-data-suite">Countdown data suite</h2>
+<p>The Countdown data suite is available at <a href="https://datasuite.vercel.app/en" class="uri">https://datasuite.vercel.app/en</a>, instructions can be found on the website. An example of the output for ANC4 coverage at the national level is shown in Figure 3 below. The graph displays survey data and routine data as dots (grey for routine data, red for survey data). The red line represents the modeled point estimates, and the red shaded areas represent the 95% uncertainty intervals.</p>
+<p><img src="images/clipboard-174900559.png" class="img-fluid" width="496"></p>
+<p>Figure 3: Data and Bayesian estimates. DHS data (red dots), routine data (grey dots), and Bayesian modeled estimates (red lines are point estimates, shaded area are 95% uncertainty intervals). </p>
+<p>Example outputs for subnational coverage estimation for 2025 are shown in Figure 4. Red dots represent point estimates, and horizontal lines represent 95% uncertainty intervals.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1977497604.png" class="img-fluid figure-img" width="584"></p>
+<figcaption>Figure 4: Bayesian estimates for admin1 regions. Legend: Bayesian point estimates (red dots) and 95% uncertainty intervals (horizontal lines).</figcaption>
+</figure>
+</div>
+</section>
+<section id="bayescoverage-r-packages-and-r-shiny-app" class="level2">
+<h2 class="anchored" data-anchor-id="bayescoverage-r-packages-and-r-shiny-app">BayesCoverage R packages and R Shiny app</h2>
+<p>The Bayesian model is implemented in R and Stan through the bayescoveragemodel R package (see <a href="https://alkemalab.github.io/bayescoveragemodel/"><strong>https://alkemalab.github.io/bayescoveragemodel/</strong></a>). Country-specific models can be fitted quickly using an R Shiny app available at <a href="https://github.com/AlkemaLab/bayescoverage_app"><strong>https://github.com/AlkemaLab/bayescoverage_app</strong></a>.</p>
+<p>To simplify installation and avoid C++ compiler issues, the app uses the bayescoveragedeploy package (<a href="https://github.com/AlkemaLab/bayescoveragedeploy/"><strong>https://github.com/AlkemaLab/bayescoveragedeploy/</strong></a>), which includes precompiled Stan models. With the deploy package, you can run the Shiny app without installing cmdstanr or other dependencies. The deploy package is available at <a href="https://alkemalab.r-universe.dev/builds"><strong>https://alkemalab.r-universe.dev/builds</strong></a>.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

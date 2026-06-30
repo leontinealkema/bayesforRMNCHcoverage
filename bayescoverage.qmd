@@ -64,6 +64,22 @@ We also see that routine data help inform how quickly coverage is changing over 
 
 # Software
 
-The Bayesian model can be fitted quickly to country data through an R Shiny app available at <https://github.com/AlkemaLab/bayescoverage_app>. Modeled estimates can also be obtained through the Countdown data suite, see <https://datasuite.vercel.app/en>.
+Modeled estimates can be obtained through the Countdown data suite or with the BayesCoverage R packages.
 
-Further details: The modeling is based on the R package `bayescoveragemodel`, see <https://alkemalab.github.io/bayescoveragemodel/>. However, to avoid installation issues related to C++ compilers, we added the Bayescoveragedeploy package, see <https://github.com/AlkemaLab/bayescoveragedeploy/>, which contains precompiled Stan models. Through the deploy package, you can use the Shiny app without needing to install cmdstanr etc on your machine. The deploy package is available here: <https://alkemalab.r-universe.dev/builds>
+## Countdown data suite 
+
+The Countdown data suite is available at <https://datasuite.vercel.app/en>, instructions can be found on the website. An example of the output for ANC4 coverage at the national level is shown in Figure 3 below. The graph displays survey data and routine data as dots (grey for routine data, red for survey data). The red line represents the modeled point estimates, and the red shaded areas represent the 95% uncertainty intervals.
+
+![](images/clipboard-174900559.png){width="496"}
+
+Figure 3: Data and Bayesian estimates. DHS data (red dots), routine data (grey dots), and Bayesian modeled estimates (red lines are point estimates, shaded area are 95% uncertainty intervals). 
+
+Example outputs for subnational coverage estimation for 2025 are shown in Figure 4. Red dots represent point estimates, and horizontal lines represent 95% uncertainty intervals.
+
+![Figure 4: Bayesian estimates for admin1 regions. Legend: Bayesian point estimates (red dots) and 95% uncertainty intervals (horizontal lines).](images/clipboard-1977497604.png){width="584"}
+
+## BayesCoverage R packages and R Shiny app
+
+The Bayesian model is implemented in R and Stan through the bayescoveragemodel R package (see [**https://alkemalab.github.io/bayescoveragemodel/**](https://alkemalab.github.io/bayescoveragemodel/)). Country-specific models can be fitted quickly using an R Shiny app available at [**https://github.com/AlkemaLab/bayescoverage_app**](https://github.com/AlkemaLab/bayescoverage_app).
+
+To simplify installation and avoid C++ compiler issues, the app uses the bayescoveragedeploy package ([**https://github.com/AlkemaLab/bayescoveragedeploy/**](https://github.com/AlkemaLab/bayescoveragedeploy/)), which includes precompiled Stan models. With the deploy package, you can run the Shiny app without installing cmdstanr or other dependencies. The deploy package is available at [**https://alkemalab.r-universe.dev/builds**](https://alkemalab.r-universe.dev/builds).
