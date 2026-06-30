@@ -14,4 +14,4 @@ The project included a training component, where participants were introduced to
 
 We developed a model to estimate and forecast coverage indicators using survey data and routine data. Since 2026, the modeling approach is available in R packages and included in the Countdown data suite. More information is provided on this website.
 
-Contact: Leontine Alkema (lalkema\@umass.edu)
+Contact: Leontine Alkema (lalkema\@umass.edu).

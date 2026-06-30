@@ -14,7 +14,7 @@ The current modeling approach is described in Alkema et al. (2024). This approac
 
 This work was supported, in whole or in part, by the Gates Foundation (INV-00844).
 
-## References:
+# References
 
 - FPET overview: L. Alkema, H. Susmann, E. Ray, S. Mooney, N. Cahill, K. Bietsch, A. Jayachandran, et al. (2024). Bayesian Statistical Modeling in Action for Estimation and Forecasting in Low- and Middle-income Countries: The Case of the Family Planning Estimation Tool. See <https://doi.org/10.48550/arXiv.2501.00007>.
 
