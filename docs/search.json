@@ -63,11 +63,25 @@
     "text": "Unit 6: Let’s Stan!\nThe slides and recording start with a summary of units 4 and 5, followed by unit 6. The recording ends with a demo of how to get started with brms using the notebook:\n\nlink to slides\nlink to recording\nR notebook to get started with brms (saved in our github repo in the folder module1, direct link here)\n\nOnce you can run the brm-function, use this notebook to check out more examples of fitting Bayesian regression models using brm:\n\nLink to R notebook in repo and the corresponding knitted pdf"
   },
   {
+    "objectID": "fpet.html",
+    "href": "fpet.html",
+    "title": "WIP",
+    "section": "",
+    "text": "WIP"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Bayesian coverage modeling",
     "section": "",
     "text": "Welcome to the website of the Countdown Bayesian coverage modeling project!\nThis project started as a statistical modeling capacity strengthening and analysis project in 2024. The goal of the project was to introduce statistical models to produce estimates and forecasts for Countdown coverage indicators. We focused on a general class of Bayesian hierarchical temporal models that includes FPET, a model that is used for estimating and forecasting family planning indicators such as modern contraceptive use, based on survey and routine data. The next page provides information on FPET.\nThe project included a training component, where participants were introduced to Bayesian models, with specific applications to using a Bayesian hierarchical temporal model like FPET for estimation and forecasting of indicators at the national and subnational level.  The training aimed to provide a conceptual understanding of Bayesian models. Additional training objectives included data exploration and model fitting, using open-source software R and Stan for computation. The training pages on this website contain the training materials.\nWe developed a model to estimate and forecast coverage indicators using survey data and routine data. Since 2026, the modeling approach is available in R packages and included in the Countdown data suite. More information is provided on this website.\nContact: Leontine Alkema (lalkema@umass.edu)"
+  },
+  {
+    "objectID": "bayescoverage.html",
+    "href": "bayescoverage.html",
+    "title": "WIP",
+    "section": "",
+    "text": "WIP"
   },
   {
     "objectID": "R.html",
@@ -117,19 +131,5 @@
     "title": "Overview",
     "section": "For Stata users",
     "text": "For Stata users\nShared by Leonardo Ferreira: For those that are comfortable working with Stata but new to R, I have come across a few cheat sheets that try to translate Stata commands to R. Here is a post with several examples and a two-page cheat sheet in the end.\nhttps://www.hertiecodingclub.com/learn/rstudio/stata_to_r/\nJust good to keep in mind that the way R works is somewhat different from the way Stata does (in terms of structure, environment and objects). So not everything can be translated or thought as if we were coding in Stata."
-  },
-  {
-    "objectID": "bayescoverage.html",
-    "href": "bayescoverage.html",
-    "title": "WIP",
-    "section": "",
-    "text": "WIP"
-  },
-  {
-    "objectID": "fpet.html",
-    "href": "fpet.html",
-    "title": "WIP",
-    "section": "",
-    "text": "WIP"
   }
 ]
