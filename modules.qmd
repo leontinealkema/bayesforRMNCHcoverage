@@ -200,7 +200,7 @@ These books are all freely available online:
 
   - <http://stat545.com/index.html> 
 
-## Other resources
+### Other resources
 
 Here are some for starters:
 
@@ -215,7 +215,7 @@ Here are some for starters:
 
 - ...
 
-## For Stata users
+### For Stata users
 
 Shared by Leonardo Ferreira: For those that are comfortable working with Stata but new to R, I have come across a few cheat sheets that try to translate Stata commands to R. Here is a post with several examples and a two-page cheat sheet in the end.\
 <https://www.hertiecodingclub.com/learn/rstudio/stata_to_r/>\
