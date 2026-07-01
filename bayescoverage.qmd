@@ -20,7 +20,7 @@ For questions or suggestions, please contact: Leontine Alkema (lalkema\@umass.ed
 
 - L. Alkema, S. Mooney, S. Kagoye, L. Ferreira, R. Mady, E. Wilson, K. Bietsch, G. Adero, P. Kaberia, R. Kananura, M. Mutua, A. Njeri, E. Wekesa (2026). Model checks for Bayesian estimation and forecasting of health coverage indicators in low- and middle-income countries. *Philosophical Transactions A* 384 (2321): 20240609. <https://doi.org/10.1098/rsta.2024.0609>
 
-![](images/clipboard-2218651605.png)
+![](images/clipboard-2218651605.png){width="594"}
 
 ## Background
 
@@ -40,9 +40,7 @@ To best use survey data, the model tries to strike the right balance—smoothing
 
 For subnational regions, the model uses survey data from the specific region when available.
 
-![](images/clipboard-4229219608.png)
-
-**Figure 1: Illustration of how coverage could have changed over time based on survey data.** The grey lines represent examples of the possible coverage trajectories that fit the data, showing a range of plausible trends. Red points mark the actual survey data, while the solid line shows the model’s best estimate. The shaded area around the estimate represents uncertainty intervals, indicating the range within which the true coverage is likely to fall.
+![Figure 1: Illustration of how coverage could have changed over time based on survey data. The grey lines represent examples of the possible coverage trajectories that fit the data, showing a range of plausible trends. Red points mark the actual survey data, while the solid line shows the model’s best estimate. The shaded area around the estimate represents uncertainty intervals, indicating the range within which the true coverage is likely to fall.](images/clipboard-4229219608.png)
 
 ## How are routine data used?
 
@@ -58,28 +56,4 @@ The figure below shows example data and estimates obtained from the model for a 
 
 We also see that routine data help inform how quickly coverage is changing over time, particularly after the most recent survey, when no new survey data is available. For example, in Region C, the routine data show an increase in coverage. As a result, the estimates that include routine data show a faster rate of change during that period compared to the estimates based only on survey data. In contrast, in Region D, routine data suggest that coverage has not increased recently and estimates that include routine data reflect that information.
 
-![](images/clipboard-291002496.png)
-
-**Figure 2: Example data and estimates.** Survey data from DHS and MICS are shown in red and blue, with vertical bars indicating how uncertain each survey point is. Routine data are shown in black. The lines represent the model’s point estimates with shaded areas highlighting uncertainty (in red if routine data were included, black/green otherwise).
-
-# Software
-
-Modeled estimates can be obtained through the Countdown data suite or with the BayesCoverage R packages.
-
-## Countdown data suite 
-
-The Countdown data suite is available at <https://datasuite.vercel.app/en>, instructions can be found on the website. An example of the output for ANC4 coverage at the national level is shown in Figure 3 below. The graph displays survey data and routine data as dots (grey for routine data, red for survey data). The red line represents the modeled point estimates, and the red shaded areas represent the 95% uncertainty intervals.
-
-![](images/clipboard-174900559.png){width="496"}
-
-Figure 3: Data and Bayesian estimates. DHS data (red dots), routine data (grey dots), and Bayesian modeled estimates (red lines are point estimates, shaded area are 95% uncertainty intervals). 
-
-Example outputs for subnational coverage estimation for 2025 are shown in Figure 4. Red dots represent point estimates, and horizontal lines represent 95% uncertainty intervals.
-
-![Figure 4: Bayesian estimates for admin1 regions. Legend: Bayesian point estimates (red dots) and 95% uncertainty intervals (horizontal lines).](images/clipboard-1977497604.png){width="584"}
-
-## BayesCoverage R packages and R Shiny app
-
-The Bayesian model is implemented in R and Stan through the bayescoveragemodel R package (see [**https://alkemalab.github.io/bayescoveragemodel/**](https://alkemalab.github.io/bayescoveragemodel/)). Country-specific models can be fitted quickly using an R Shiny app available at [**https://github.com/AlkemaLab/bayescoverage_app**](https://github.com/AlkemaLab/bayescoverage_app).
-
-To simplify installation and avoid C++ compiler issues, the app uses the bayescoveragedeploy package ([**https://github.com/AlkemaLab/bayescoveragedeploy/**](https://github.com/AlkemaLab/bayescoveragedeploy/)), which includes precompiled Stan models. With the deploy package, you can run the Shiny app without installing cmdstanr or other dependencies. The deploy package is available at [**https://alkemalab.r-universe.dev/builds**](https://alkemalab.r-universe.dev/builds).
+![Figure 2: Example data and estimates. Survey data from DHS and MICS are shown in red and blue, with vertical bars indicating how uncertain each survey point is. Routine data are shown in black. The lines represent the model’s point estimates with shaded areas highlighting uncertainty (in red if routine data were included, black/green otherwise).](images/clipboard-291002496.png){width="638"}
