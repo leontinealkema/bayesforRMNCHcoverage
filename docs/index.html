@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bayesian coverage modeling – BayesCoverage</title>
+<title>Welcome to the BayesCoverage project! – BayesCoverage</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -97,10 +97,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./fpet.html"> 
-<span class="menu-text">FPET</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./bayescoverage.html"> 
 <span class="menu-text">Coverage modeling</span></a>
   </li>  
@@ -109,12 +105,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./modules.html"> 
-<span class="menu-text">Training - let’s go Bayesian</span></a>
+    <a class="nav-link" href="./fpet.html"> 
+<span class="menu-text">FPET</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./R.html"> 
-<span class="menu-text">Training - let’s use R and git(hub)!</span></a>
+    <a class="nav-link" href="./modules.html"> 
+<span class="menu-text">Training - let’s go Bayesian</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -127,15 +123,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#bayescoverage-model" id="toc-bayescoverage-model" class="nav-link" data-scroll-target="#bayescoverage-model">BayesCoverage Model</a></li>
+  <li><a href="#fpet" id="toc-fpet" class="nav-link" data-scroll-target="#fpet">FPET</a></li>
+  <li><a href="#training-in-bayesian-modeling" id="toc-training-in-bayesian-modeling" class="nav-link" data-scroll-target="#training-in-bayesian-modeling">Training in Bayesian Modeling</a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bayesian coverage modeling</h1>
+<h1 class="title">Welcome to the BayesCoverage project!</h1>
 </div>
 
 
@@ -152,13 +161,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to the website of the Countdown Bayesian coverage modeling project!</p>
-<p>The Countdown Bayesian coverage modeling project began in 2024 as a statistical modeling capacity strengthening and analysis project. The goal of the project was to develop statistical models for estimating and forecasting Countdown coverage indicators. We focused on a general class of Bayesian hierarchical temporal models that includes FPET, a model that is used for estimating and forecasting family planning indicators such as modern contraceptive use, based on survey and routine data. More information about FPET is available on the next page.</p>
-<p>The project included a training component designed to build participants’ understanding of Bayesian models and their application to coverage indicator estimation and forecasting at national and subnational levels. The training covered conceptual foundations of Bayesian modeling, data exploration, and model fitting using the open-source software R and Stan. Training materials are available on this website.</p>
-<p>We developed a model to estimate and forecast coverage indicators using survey data and routine data. Our modeling approach is available in R packages and included in the Countdown data suite. More information is provided on this website.</p>
-<p>Contact: Leontine Alkema (lalkema@umass.edu).</p>
+<section id="section" class="level1">
+<h1></h1>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>The BayesCoverage project was launched in 2024 by <a href="https://www.countdown2030.org/">Countdown to 2030</a> as a statistical modeling capacity strengthening and analysis project. The goal of the project was to develop statistical models for estimating and forecasting health coverage indicators using both survey and routine data.</p>
+</section>
+<section id="bayescoverage-model" class="level2">
+<h2 class="anchored" data-anchor-id="bayescoverage-model">BayesCoverage Model</h2>
+<p>We developed a <a href="https://doi.org/10.1098/rsta.2024.0609">Bayesian hierarchical temporal model</a> that provides national and subnational estimates and forecasts of coverage indicators, using survey and routine data. This modeling approach is implemented in <a href="https://github.com/AlkemaLab/bayescoverage_app">R packages</a> and integrated into the <a href="https://datasuite.vercel.app/en">Countdown data suite</a>, making it accessible for practitioners and analysts working on health coverage assessment.</p>
+</section>
+<section id="fpet" class="level2">
+<h2 class="anchored" data-anchor-id="fpet">FPET</h2>
+<p>The BayesCoverage modeling approach builds on the Family Planning Estimation Tool (FPET). FPET estimates and forecasts family planning indicators—such as modern contraceptive use—using survey and routine data. Additional information about FPET is available on the <a href="https://leontinealkema.github.io/bayesforRMNCHcoverage/fpet.html">FPET page</a>.</p>
+</section>
+<section id="training-in-bayesian-modeling" class="level2">
+<h2 class="anchored" data-anchor-id="training-in-bayesian-modeling">Training in Bayesian Modeling</h2>
+<p>The project included training designed to strengthen participants’ understanding of Bayesian methods and their application to coverage indicator estimation and forecasting. Training materials are available on the <a href="https://leontinealkema.github.io/bayesforRMNCHcoverage/modules.html">training page</a>.</p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>Leontine Alkema (lalkema@umass.edu)</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

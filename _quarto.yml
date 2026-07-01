@@ -8,16 +8,14 @@ website:
     left:
       - href: index.qmd
         text: About
-      - href: fpet.qmd
-        text: FPET
       - href: bayescoverage.qmd
         text: Coverage modeling 
       - href: software.qmd
         text: Software
+      - href: fpet.qmd
+        text: FPET
       - href: modules.qmd
         text: Training - let’s go Bayesian
-      - href: R.qmd
-        text: Training - let’s use R and git(hub)!
 
 format:
   html:

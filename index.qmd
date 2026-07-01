@@ -1,17 +1,29 @@
 ---
-title: "Bayesian coverage modeling"
+title: "Welcome to the BayesCoverage project!"
 format:
   html:
     link-external-icon: true
     link-external-newwindow: true
 ---
 
-Welcome to the website of the Countdown Bayesian coverage modeling project!
+# 
 
-The Countdown Bayesian coverage modeling project began in 2024 as a statistical modeling capacity strengthening and analysis project. The goal of the project was to develop statistical models for estimating and forecasting Countdown coverage indicators. We focused on a general class of Bayesian hierarchical temporal models that includes FPET, a model that is used for estimating and forecasting family planning indicators such as modern contraceptive use, based on survey and routine data. More information about FPET is available on the next page.
+## Background
 
-The project included a training component designed to build participants' understanding of Bayesian models and their application to coverage indicator estimation and forecasting at national and subnational levels. The training covered conceptual foundations of Bayesian modeling, data exploration, and model fitting using the open-source software R and Stan. Training materials are available on this website.
+The BayesCoverage project was launched in 2024 by [Countdown to 2030](https://www.countdown2030.org/) as a statistical modeling capacity strengthening and analysis project. The goal of the project was to develop statistical models for estimating and forecasting health coverage indicators using both survey and routine data.
 
-We developed a model to estimate and forecast coverage indicators using survey data and routine data. Our modeling approach is available in R packages and included in the Countdown data suite. More information is provided on this website.
+## BayesCoverage Model
 
-Contact: Leontine Alkema (lalkema\@umass.edu).
+We developed a [Bayesian hierarchical temporal model](https://doi.org/10.1098/rsta.2024.0609) that provides national and subnational estimates and forecasts of coverage indicators, using survey and routine data. This modeling approach is implemented in [R packages](https://github.com/AlkemaLab/bayescoverage_app) and integrated into the [Countdown data suite](https://datasuite.vercel.app/en), making it accessible for practitioners and analysts working on health coverage assessment.
+
+## FPET
+
+The BayesCoverage modeling approach builds on the Family Planning Estimation Tool (FPET). FPET estimates and forecasts family planning indicators—such as modern contraceptive use—using survey and routine data. Additional information about FPET is available on the [FPET page](https://leontinealkema.github.io/bayesforRMNCHcoverage/fpet.html).
+
+## Training in Bayesian Modeling
+
+The project included training designed to strengthen participants' understanding of Bayesian methods and their application to coverage indicator estimation and forecasting. Training materials are available on the [training page](https://leontinealkema.github.io/bayesforRMNCHcoverage/modules.html).
+
+## Contact
+
+Leontine Alkema (lalkema\@umass.edu)

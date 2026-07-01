@@ -4,21 +4,7 @@
     "href": "modules.html",
     "title": "Overview",
     "section": "",
-    "text": "This page includes slides and recordings to learn about Bayesian modeling.\n\n\nWhy would we want to introduce Bayesian statistical models to produce estimates and forecasts for Countdown coverage indicators?\n\nLink to slides\nLink to recording\n\n\n\n\nThe training is divided into modules:\n\nIntroduction to Bayesian inference and Bayesian modeling in global health\nHow to exchange information between populations: Hierarchical models (also called multilevel models)\nIntroduction to Bayesian modeling of coverage indicators and the Family Planning Estimation Tool (FPET)\n\nIn each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises."
-  },
-  {
-    "objectID": "modules.html#background",
-    "href": "modules.html#background",
-    "title": "Overview",
-    "section": "",
-    "text": "Why would we want to introduce Bayesian statistical models to produce estimates and forecasts for Countdown coverage indicators?\n\nLink to slides\nLink to recording"
-  },
-  {
-    "objectID": "modules.html#training-content",
-    "href": "modules.html#training-content",
-    "title": "Overview",
-    "section": "",
-    "text": "The training is divided into modules:\n\nIntroduction to Bayesian inference and Bayesian modeling in global health\nHow to exchange information between populations: Hierarchical models (also called multilevel models)\nIntroduction to Bayesian modeling of coverage indicators and the Family Planning Estimation Tool (FPET)\n\nIn each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises."
+    "text": "This page includes slides and recordings to learn about Bayesian modeling. The training is divided into 3 main modules:\n\nIntroduction to Bayesian inference and Bayesian modeling in global health\nHow to exchange information between populations: Hierarchical models (also called multilevel models)\nIntroduction to Bayesian modeling of coverage indicators and the Family Planning Estimation Tool (FPET)\n\nIn each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises.\nCode for the Bayesian modeling training is available in a public repository (repo) on Github: https://github.com/AlkemaLab/BayesCoverageTraining. We use the open-source software R for analyses and computations, through its user-friendly interface R-studio. For model fitting, R packages and extensions are used such that all analyses take place in R. Analysis scripts will be provided for example analyses and discussed in recordings. Additional resources for learning R and git(hub) are included at the end of this page."
   },
   {
     "objectID": "modules.html#unit-1-lets-think-like-a-bayesian",
@@ -63,25 +49,46 @@
     "text": "Unit 6: Let’s Stan!\nThe slides and recording start with a summary of units 4 and 5, followed by unit 6. The recording ends with a demo of how to get started with brms using the notebook:\n\nlink to slides\nlink to recording\nR notebook to get started with brms (saved in our github repo in the folder module1, direct link here)\n\nOnce you can run the brm-function, use this notebook to check out more examples of fitting Bayesian regression models using brm:\n\nLink to R notebook in repo and the corresponding knitted pdf"
   },
   {
+    "objectID": "modules.html#steps-to-get-set-up-with-rr-studio-for-new-users",
+    "href": "modules.html#steps-to-get-set-up-with-rr-studio-for-new-users",
+    "title": "Overview",
+    "section": "Steps to get set up with R/R studio for new users",
+    "text": "Steps to get set up with R/R studio for new users\n\nStep 1: Download and install R and Rstudio\nGo to https://posit.co/download/rstudio-desktop/ and follow instructions to install R and Rstudio on your own computer (first install R, then R studio). \n\n\nStep 2: Download the BayesCoverageTraining material from github\nAll code for this course will be made available in a public repository (repo) on Github: https://github.com/AlkemaLab/BayesCoverageTraining.  \nThe text below introduces Github and a workflow for non-Github users. Participants who are familiar with github can ignore that workflow and work with the repository directly. \n\nInstructions for those new to Github\nGithub refers to a hosting service for projects that use a version control system (git). Many programming projects, such as R packages, use Github repositories and the git version control system such that several people can work together and contribute to the project. Rstudio has nice functionality to work with and contribute to Github repositories. However, it requires some learning to get started with it. Hence, to avoid too much learning at once, we introduce a workflow that does not require any knowledge or experience with git(hub) for new users. If you are interested in learning more about git and github, some resources are provided below. We may come back to the use of github when doing collaborative analysis projects.\nWhen downloading the code for the first time, take the following steps:\n\nDownload the repo \n\n\nGo to https://github.com/AlkemaLab/BayesCoverageTraining\nClick on “Code” (green button), then “download zip”, see screenshot 1 below.\n\n\n\nSet up your local folder with your Rstudio project \n\n\nPlace the zipped downloaded file in a place where you can find it again: this directory will contain all your R code for the training\nUnzip the downloaded file\nClick on “BayesCoverageTraining.Rproj” to open your project in R studio, see screenshot 2.\n\n\nCode updates/additions:\nNew modules will be added as the training progresses. To get the code in your local BayesCoverageTraining folder, you will need to download the new module and add it. \nTo do so, we recommend just downloading the entire repository again as per step A above, unzipping, and then selecting the folder that you want to move to your local BayesCoverageTraining folder. (But if you want, note that you can also download individual files (just click on the file you want, and then there is a download button [downwards arrow] in the top left).\n\n\n\nStep 3: Open your BayesCoverageTraining R studio project and start working with the code for the module\nAs explained in Step 3, you will have a local directory with BayesCoverageTraining.Rproj in it. Click on that Rproj file to start working away (see recording R demo - getting started for a quick intro).\nWe recommend always to start with opening the project file (to start an R studio session), as opposed to opening just the file you want to use, to have the right set up.\nYou can add additional files and edit the training files as you want. Just make sure to stick to the folder structure to avoid issues. If you are running into problems after editing a local copy of a file, you can always download a new one and start over."
+  },
+  {
+    "objectID": "modules.html#learning-r",
+    "href": "modules.html#learning-r",
+    "title": "Overview",
+    "section": "Learning R",
+    "text": "Learning R\nIf you’re completely new to R, we recommend to consider one of gazillion great resources out there to get started in R and R studio. For module 1, we recommend learning a little about Rstudio and R markdown. We added some resources for this below. For later modules, learning about data wrangling (using dplyr), data visualization (using ggplot), and reading/writing data will be helpful. We will add information for this later on in the training. \nNote on posit cloud computing: Some introductions to Rstudio use posit cloud services. While this works well to show how Rstudio works (without needing to worry about getting a local set up in order), our trials suggested that it’s not powerful enough for our exercises (fitting even a simple Bayesian model took a long time and resulted in some workspace crashes). So we will stick to using Rstudio locally.\n\nBooks on R and Rstudio\nThese books are all freely available online:\n\nR for Data Science (first published in 2017, now on 2(+?) edition, content updated on website). Hadley Wickham and Garrett Grolemund. O’Reilly Media, Inc. https://r4ds.hadley.nz/\nStatistical Inference via Data Science: A Modern Dive into R and the Tidyverse (2020). Chester Ismay and Albert Y. Kim. Chapman & Hall/CRC The R Series. https://moderndive.com\n(short) courses with great reference material (perhaps some of it is a little outdated by now but intro material, ie on R, R studio, objects, markdown, dplyr basics is still relevant):\n\nhttps://github.com/rstudio-education/remaster-the-tidyverse\nhttp://stat545.com/index.html"
+  },
+  {
+    "objectID": "modules.html#other-resources",
+    "href": "modules.html#other-resources",
+    "title": "Overview",
+    "section": "Other resources",
+    "text": "Other resources\nHere are some for starters:\n\nGreat resource in terms of covering the main parts and being to the point.\n\nhttps://scubed.netlify.app/courses/1_intro_r_tidyverse/\nPlease note that there is a self-paced version of the course I linked to, you just need to click on free materials https://introduction-r-tidyverse.netlify.app/\n\nSite includes recordings on Rstudio, R markdown\n\nhttps://datavizf23.classes.andrewheiss.com/lesson/01-lesson.html\n\n…"
+  },
+  {
+    "objectID": "modules.html#for-stata-users",
+    "href": "modules.html#for-stata-users",
+    "title": "Overview",
+    "section": "For Stata users",
+    "text": "For Stata users\nShared by Leonardo Ferreira: For those that are comfortable working with Stata but new to R, I have come across a few cheat sheets that try to translate Stata commands to R. Here is a post with several examples and a two-page cheat sheet in the end.\nhttps://www.hertiecodingclub.com/learn/rstudio/stata_to_r/\nJust good to keep in mind that the way R works is somewhat different from the way Stata does (in terms of structure, environment and objects). So not everything can be translated or thought as if we were coding in Stata."
+  },
+  {
+    "objectID": "modules.html#getting-going-with-github",
+    "href": "modules.html#getting-going-with-github",
+    "title": "Overview",
+    "section": "Getting going with git(hub)",
+    "text": "Getting going with git(hub)\nSome brief steps:\n\nGet a github account\nRecommended steps to get started using Rstudio build-in functionality: \n\nConnect your Rstudio with github, here is an “how-to-set-it-up” explanation https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio\nConsider an Rstudio-based workflow such as this one https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r\n\n\nOnce you get going, you may want to learn more. This is a great book: https://happygitwithr.com/"
+  },
+  {
     "objectID": "software.html",
     "href": "software.html",
-    "title": "BayesCoverage",
+    "title": "Software summary",
     "section": "",
-    "text": "Bayesian coverage estimates can be obtained with the BayesCoverage R packages, an R Shiny app, or through the Countdown data suite."
-  },
-  {
-    "objectID": "software.html#bayescoverage-r-packages-and-r-shiny-app",
-    "href": "software.html#bayescoverage-r-packages-and-r-shiny-app",
-    "title": "BayesCoverage",
-    "section": "BayesCoverage R packages and R Shiny app",
-    "text": "BayesCoverage R packages and R Shiny app\nThe Bayesian model is implemented in R and Stan through the bayescoveragemodel R package, see https://alkemalab.github.io/bayescoveragemodel/.\nCountry-specific models can be fitted quickly using an R Shiny app available at https://github.com/AlkemaLab/bayescoverage_app. To simplify installation and avoid C++ compiler issues, the app uses the bayescoveragedeploy package (https://github.com/AlkemaLab/bayescoveragedeploy/), which includes precompiled Stan models. With the deploy package, you can run the Shiny app without installing cmdstanr or other dependencies. The deploy package is available at https://alkemalab.r-universe.dev/builds."
-  },
-  {
-    "objectID": "software.html#countdown-data-suite",
-    "href": "software.html#countdown-data-suite",
-    "title": "BayesCoverage",
-    "section": "Countdown data suite",
-    "text": "Countdown data suite\nThe Countdown data suite is available at https://datasuite.vercel.app/en, instructions can be found on the website.\nAn example of the output from the Countdown data suite for ANC4 coverage at the national level is shown in Figure 1 below. The graph displays survey data and routine data as dots (grey for routine data, red for survey data). The red line represents the modeled point estimates, and the red shaded areas represent the 95% uncertainty intervals.\n\n\n\nFigure 1: Data and Bayesian estimates. DHS data (red dots), routine data (grey dots), and Bayesian modeled estimates (red lines are point estimates, shaded area are 95% uncertainty intervals).\n\n\nExample outputs for subnational coverage estimation for 2025 are shown in Figure 2. Red dots represent point estimates, and horizontal lines represent 95% uncertainty intervals.\n\n\n\nFigure 2: Bayesian estimates for admin1 regions. Legend: Bayesian point estimates (red dots) and 95% uncertainty intervals (horizontal lines)."
+    "text": "Software summary\nBayesian coverage estimates can be obtained with the BayesCoverage R packages, an R Shiny app, or through the Countdown data suite.\n\n\nBayesCoverage R packages and R Shiny app\nThe Bayesian model is implemented in R and Stan through the bayescoveragemodel R package, see https://alkemalab.github.io/bayescoveragemodel/.\nCountry-specific models can be fitted quickly using an R Shiny app available at https://github.com/AlkemaLab/bayescoverage_app. To simplify installation and avoid C++ compiler issues, the app uses the bayescoveragedeploy package (https://github.com/AlkemaLab/bayescoveragedeploy/), which includes precompiled Stan models. With the deploy package, you can run the Shiny app without installing cmdstanr or other dependencies. The deploy package is available at https://alkemalab.r-universe.dev/builds.\n\n\nCountdown data suite\nThe Countdown data suite is available at https://datasuite.vercel.app/en, instructions can be found on the website.\nAn example of the output from the Countdown data suite for ANC4 coverage at the national level is shown in Figure 1 below. The graph displays survey data and routine data as dots (grey for routine data, red for survey data). The red line represents the modeled point estimates, and the red shaded areas represent the 95% uncertainty intervals.\n\n\n\nFigure 1: Data and Bayesian estimates. DHS data (red dots), routine data (grey dots), and Bayesian modeled estimates (red lines are point estimates, shaded area are 95% uncertainty intervals).\n\n\nExample outputs for subnational coverage estimation for 2025 are shown in Figure 2. Red dots represent point estimates, and horizontal lines represent 95% uncertainty intervals.\n\n\n\nFigure 2: Bayesian estimates for admin1 regions. Legend: Bayesian point estimates (red dots) and 95% uncertainty intervals (horizontal lines)."
   },
   {
     "objectID": "bayescoverage.html",
@@ -135,9 +142,44 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Bayesian coverage modeling",
+    "title": "Welcome to the BayesCoverage project!",
     "section": "",
-    "text": "Welcome to the website of the Countdown Bayesian coverage modeling project!\nThe Countdown Bayesian coverage modeling project began in 2024 as a statistical modeling capacity strengthening and analysis project. The goal of the project was to develop statistical models for estimating and forecasting Countdown coverage indicators. We focused on a general class of Bayesian hierarchical temporal models that includes FPET, a model that is used for estimating and forecasting family planning indicators such as modern contraceptive use, based on survey and routine data. More information about FPET is available on the next page.\nThe project included a training component designed to build participants’ understanding of Bayesian models and their application to coverage indicator estimation and forecasting at national and subnational levels. The training covered conceptual foundations of Bayesian modeling, data exploration, and model fitting using the open-source software R and Stan. Training materials are available on this website.\nWe developed a model to estimate and forecast coverage indicators using survey data and routine data. Our modeling approach is available in R packages and included in the Countdown data suite. More information is provided on this website.\nContact: Leontine Alkema (lalkema@umass.edu)."
+    "text": "The BayesCoverage project was launched in 2024 by Countdown to 2030 as a statistical modeling capacity strengthening and analysis project. The goal of the project was to develop statistical models for estimating and forecasting health coverage indicators using both survey and routine data.\n\n\n\nWe developed a Bayesian hierarchical temporal model that provides national and subnational estimates and forecasts of coverage indicators, using survey and routine data. This modeling approach is implemented in R packages and integrated into the Countdown data suite, making it accessible for practitioners and analysts working on health coverage assessment.\n\n\n\nThe BayesCoverage modeling approach builds on the Family Planning Estimation Tool (FPET). FPET estimates and forecasts family planning indicators—such as modern contraceptive use—using survey and routine data. Additional information about FPET is available on the FPET page.\n\n\n\nThe project included training designed to strengthen participants’ understanding of Bayesian methods and their application to coverage indicator estimation and forecasting. Training materials are available on the training page.\n\n\n\nLeontine Alkema (lalkema@umass.edu)"
+  },
+  {
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "Welcome to the BayesCoverage project!",
+    "section": "",
+    "text": "The BayesCoverage project was launched in 2024 by Countdown to 2030 as a statistical modeling capacity strengthening and analysis project. The goal of the project was to develop statistical models for estimating and forecasting health coverage indicators using both survey and routine data."
+  },
+  {
+    "objectID": "index.html#bayescoverage-model",
+    "href": "index.html#bayescoverage-model",
+    "title": "Welcome to the BayesCoverage project!",
+    "section": "",
+    "text": "We developed a Bayesian hierarchical temporal model that provides national and subnational estimates and forecasts of coverage indicators, using survey and routine data. This modeling approach is implemented in R packages and integrated into the Countdown data suite, making it accessible for practitioners and analysts working on health coverage assessment."
+  },
+  {
+    "objectID": "index.html#fpet",
+    "href": "index.html#fpet",
+    "title": "Welcome to the BayesCoverage project!",
+    "section": "",
+    "text": "The BayesCoverage modeling approach builds on the Family Planning Estimation Tool (FPET). FPET estimates and forecasts family planning indicators—such as modern contraceptive use—using survey and routine data. Additional information about FPET is available on the FPET page."
+  },
+  {
+    "objectID": "index.html#training-in-bayesian-modeling",
+    "href": "index.html#training-in-bayesian-modeling",
+    "title": "Welcome to the BayesCoverage project!",
+    "section": "",
+    "text": "The project included training designed to strengthen participants’ understanding of Bayesian methods and their application to coverage indicator estimation and forecasting. Training materials are available on the training page."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Welcome to the BayesCoverage project!",
+    "section": "",
+    "text": "Leontine Alkema (lalkema@umass.edu)"
   },
   {
     "objectID": "fpet.html",

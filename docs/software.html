@@ -97,10 +97,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./fpet.html"> 
-<span class="menu-text">FPET</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./bayescoverage.html"> 
 <span class="menu-text">Coverage modeling</span></a>
   </li>  
@@ -109,12 +105,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./modules.html"> 
-<span class="menu-text">Training - let’s go Bayesian</span></a>
+    <a class="nav-link" href="./fpet.html"> 
+<span class="menu-text">FPET</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./R.html"> 
-<span class="menu-text">Training - let’s use R and git(hub)!</span></a>
+    <a class="nav-link" href="./modules.html"> 
+<span class="menu-text">Training - let’s go Bayesian</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -132,7 +128,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#bayescoverage-r-packages-and-r-shiny-app" id="toc-bayescoverage-r-packages-and-r-shiny-app" class="nav-link active" data-scroll-target="#bayescoverage-r-packages-and-r-shiny-app">BayesCoverage R packages and R Shiny app</a></li>
+  <li><a href="#software-summary" id="toc-software-summary" class="nav-link active" data-scroll-target="#software-summary">Software summary</a></li>
+  <li><a href="#bayescoverage-r-packages-and-r-shiny-app" id="toc-bayescoverage-r-packages-and-r-shiny-app" class="nav-link" data-scroll-target="#bayescoverage-r-packages-and-r-shiny-app">BayesCoverage R packages and R Shiny app</a></li>
   <li><a href="#countdown-data-suite" id="toc-countdown-data-suite" class="nav-link" data-scroll-target="#countdown-data-suite">Countdown data suite</a></li>
   </ul>
 </nav>
@@ -143,14 +140,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="software-summary" class="level1">
+<h1>Software summary</h1>
 <p>Bayesian coverage estimates can be obtained with the BayesCoverage R packages, an R Shiny app, or through the Countdown data suite.</p>
-<section id="bayescoverage-r-packages-and-r-shiny-app" class="level2">
-<h2 class="anchored" data-anchor-id="bayescoverage-r-packages-and-r-shiny-app">BayesCoverage R packages and R Shiny app</h2>
+</section>
+<section id="bayescoverage-r-packages-and-r-shiny-app" class="level1">
+<h1>BayesCoverage R packages and R Shiny app</h1>
 <p>The Bayesian model is implemented in R and Stan through the bayescoveragemodel R package, see <strong>https://alkemalab.github.io/bayescoveragemodel/.</strong></p>
 <p>Country-specific models can be fitted quickly using an R Shiny app available at <a href="https://github.com/AlkemaLab/bayescoverage_app"><strong>https://github.com/AlkemaLab/bayescoverage_app</strong></a>. To simplify installation and avoid C++ compiler issues, the app uses the bayescoveragedeploy package (<a href="https://github.com/AlkemaLab/bayescoveragedeploy/"><strong>https://github.com/AlkemaLab/bayescoveragedeploy/</strong></a>), which includes precompiled Stan models. With the deploy package, you can run the Shiny app without installing cmdstanr or other dependencies. The deploy package is available at <a href="https://alkemalab.r-universe.dev/builds"><strong>https://alkemalab.r-universe.dev/builds</strong></a>.</p>
 </section>
-<section id="countdown-data-suite" class="level2">
-<h2 class="anchored" data-anchor-id="countdown-data-suite">Countdown data suite</h2>
+<section id="countdown-data-suite" class="level1">
+<h1>Countdown data suite</h1>
 <p>The Countdown data suite is available at <a href="https://datasuite.vercel.app/en" class="uri">https://datasuite.vercel.app/en</a>, instructions can be found on the website.</p>
 <p>An example of the output from the Countdown data suite for ANC4 coverage at the national level is shown in Figure 1 below. The graph displays survey data and routine data as dots (grey for routine data, red for survey data). The red line represents the modeled point estimates, and the red shaded areas represent the 95% uncertainty intervals.</p>
 <div class="quarto-figure quarto-figure-center">
